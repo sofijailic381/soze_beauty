@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOŽE BEAUTY — kozmetički salon u Novom Sadu | Nega lica i tela</title>
+<meta name="description" content="SOŽE BEAUTY, kozmetički salon u Novom Sadu. Nega lica i tela, hemijski pilinzi, radiotalasni lifting, LED terapija, laserska epilacija i online dijagnostika kože.">
+<meta name="theme-color" content="#0F3F44">
+<link rel="canonical" href="https://USERNAME.github.io/soze-beauty/">
+<link rel="icon" href="assets/img/soze-beauty-bela-2x.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/soze-beauty-bela-2x.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:site_name" content="SOŽE BEAUTY">
+<meta property="og:title" content="SOŽE BEAUTY — kozmetički salon u Novom Sadu">
+<meta property="og:description" content="Nega lica i tela, pilinzi, radiotalasni lifting, LED terapija i laserska epilacija. Online dijagnostika kože.">
+<meta property="og:image" content="assets/img/kozmeticki-salon-novi-sad-soze-beauty.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "SOŽE BEAUTY",
+  "image": "assets/img/kozmeticki-salon-novi-sad-soze-beauty.webp",
+  "telephone": "+381658887693",
+  "address": { "@type": "PostalAddress", "streetAddress": "Aranj Janoša 9", "postalCode": "21000", "addressLocality": "Novi Sad", "addressCountry": "RS" },
+  "hasMap": "https://www.google.com/maps?cid=9173733897705992512",
+  "priceRange": "$$"
+}
+</script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+  body { margin: 0; background: #0F3F44; color: #F5EFE0; font-family: 'Roboto', Arial, sans-serif; overflow-x: hidden; }
+  * { box-sizing: border-box; }
+  a { color: #49A6B7; text-decoration: none; }
+  a:hover { color: #B2DBD5; }
+  :focus-visible { outline: 2px solid #49A6B7; outline-offset: 3px; }
+  input, textarea, button, select { font-family: 'Roboto', Arial, sans-serif; }
+  .no-bar { scrollbar-width: none; }
+  .no-bar::-webkit-scrollbar { display: none; }
+  @keyframes ticker { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
+  @keyframes riseIn { from { opacity: 0; transform: translateY(115%); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes clipUp { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition-duration: 1ms !important; }
+  }
+
+  /* ═══════════ RESPONSIVE SISTEM ═══════════
+     ≥1180 desktop (nepromenjen) · 860–1179 tablet · 768–859 mali tablet
+     430–767 mobilni · ≤429 kompaktni · provereno i na 360px            */
+  .sb-nav-link { display: none; }
+  .sb-vlabel { display: none; }
+  .sb-grid { display: none; }
+  .sb-price-desktop { display: none !important; }
+  .sb-price-mobile { display: block; }
+  .sb-swipe { display: inline; }
+  @media (min-width: 900px) { .sb-grid { display: grid; } }
+  @media (min-width: 860px) {
+    .sb-price-desktop { display: flex !important; }
+    .sb-price-mobile { display: none; }
+    .sb-swipe { display: none; }
+  }
+  /* navigacija: linkovi kao na originalnom desktopu (od 1060px), hamburger samo niže */
+  @media (min-width: 1060px) {
+    .sb-nav-link { display: inline; }
+    .sb-burger { display: none !important; }
+  }
+  @media (min-width: 1180px) { .sb-vlabel { display: block; } }
+  @media (max-width: 1179px) { .sb-preview { display: none !important; } }
+
+  @media (max-width: 859px) {
+    .sb-fluid { min-width: 0 !important; }
+    .sb-two { flex-direction: column !important; flex-wrap: nowrap !important; }
+    .sb-flat { display: contents !important; }
+    .sb-o1 { order: 1; } .sb-o2 { order: 2; } .sb-o3 { order: 3; }
+    .sb-o4 { order: 4; } .sb-o5 { order: 5; }
+    .sb-need { grid-template-columns: 26px minmax(0, 1fr) 16px !important; gap: 14px !important; align-items: start !important; }
+    .sb-need-inner { display: block !important; }
+    .sb-need-title { display: block !important; flex: none !important; white-space: normal !important; max-width: none !important; overflow-wrap: break-word; }
+    .sb-need-body { display: block !important; flex: none !important; margin-top: 10px; }
+    .sb-world-title, .sb-world-text { min-height: 0 !important; }
+    .sb-quals { grid-template-columns: 1fr 1fr !important; }
+    .sb-quals > * { padding-left: 12px !important; }
+    .sb-price-h2 { display: none !important; }
+    .sb-desktop-only { display: none !important; }
+    /* slike u stakovanim sekcijama zauzimaju punu širinu sadržaja (kao hero) */
+    .sb-two > * { align-self: stretch !important; width: auto !important; }
+  }
+
+  @media (max-width: 767px) {
+    .sb { overflow-wrap: break-word; }
+    .sb-util-addr, .sb-util-hours, .sb-hdr-cta { display: none !important; }
+    section[id], form[id] { scroll-margin-top: 92px !important; }
+    .sb [style*="font-size: 11px"] { font-size: 12px !important; }
+    .sb [style*="font-size: 15px"] { font-size: 16px !important; line-height: 1.7 !important; }
+    .sb h1 { font-size: clamp(42px, 12.6vw, 56px) !important; }
+    .sb h2:not(.sb-h2-sm) { font-size: clamp(32px, 9vw, 42px) !important; }
+    .sb h3 { font-size: clamp(22px, 6.4vw, 28px) !important; }
+    .sb-hero-cta, .sb-cta-row { flex-direction: column; align-items: stretch; }
+    .sb-hero-cta > a, .sb-cta-row > a { width: 100%; justify-content: center; min-height: 52px; }
+    .sb-hero-frame { aspect-ratio: 4 / 5 !important; }
+    .sb-hero-img { object-position: 70% 22% !important; }
+    .sb-pristup-photo { object-position: 58% 30% !important; }
+    .sb-car { scroll-padding-left: 20px; -webkit-overflow-scrolling: touch; }
+    .sb-card { flex: 0 0 86% !important; }
+    .sb-arrows { display: none !important; }
+    .sb-results { grid-template-columns: 1fr !important; }
+    .sb-edu-cta { flex: 1 1 100% !important; }
+    .sb-submit { width: 100%; min-height: 52px !important; }
+    .sb-consent { align-items: center !important; padding: 6px 0; min-height: 44px; }
+    .sb-consent input[type="checkbox"] { width: 24px !important; height: 24px !important; }
+    /* tap zone: sve interaktivno najmanje 44px visine */
+    .sb-utilbar { display: none !important; }
+    .sb-dot { width: 44px !important; height: 44px !important; }
+    .sb-fcol > a, .sb-faddr a, .sb-inline-link {
+      display: inline-flex !important; align-items: center; min-height: 44px !important;
+    }
+    .sb-fcol { gap: 2px !important; }
+  }
+
+  @media (max-width: 429px) {
+    .sb-80 { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
+    .sb-stat { align-items: flex-start !important; }
+  }
+  @media (max-width: 389px) {
+    .sb-quals { grid-template-columns: 1fr !important; }
+    .sb-price-name, .sb-price-price { flex: 1 1 100% !important; }
+  }
+  @media (max-width: 375px) {
+    .sb .sb-pad { padding-left: 16px !important; padding-right: 16px !important; }
+  }
+</style>
+</helmet>
+
+<div class="sb" style="position: relative; width: 100%; background: #0F3F44; overflow: hidden;">
+
+  <sc-if value="{{ gridLines }}" hint-placeholder-val="{{ true }}">
+    <div ref="{{ gridRef }}" aria-hidden="true" class="sb-grid sb-pad" style="position: absolute; inset: 0; z-index: 0; pointer-events: none; max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 72px); display: grid; grid-template-columns: repeat(6, 1fr);">
+      <div style="border-left: 1px solid rgba(178,219,213,0.09);"></div>
+      <div style="border-left: 1px solid rgba(178,219,213,0.09);"></div>
+      <div style="border-left: 1px solid rgba(178,219,213,0.09);"></div>
+      <div style="border-left: 1px solid rgba(178,219,213,0.09);"></div>
+      <div style="border-left: 1px solid rgba(178,219,213,0.09);"></div>
+      <div style="border-left: 1px solid rgba(178,219,213,0.09); border-right: 1px solid rgba(178,219,213,0.09);"></div>
+    </div>
+  </sc-if>
+
+  <!-- ═══════════ HEADER — nav linkovi i telefon se menjaju ovde ═══════════ -->
+  <header ref="{{ headerRef }}" style="position: fixed; top: 0; left: 0; right: 0; z-index: 90; transition: background 600ms ease, border-color 600ms ease, backdrop-filter 400ms ease; border-bottom: 1px solid rgba(178,219,213,0);">
+    <div class="sb-utilbar" style="border-bottom: 1px solid rgba(178,219,213,0.16);">
+      <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: 9px clamp(20px, 4vw, 72px); display: flex; gap: 22px; justify-content: space-between; align-items: center; font-size: 12px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,239,224,0.82); white-space: nowrap;">
+        <span ref="{{ utilAddr }}" class="sb-util-addr" style="overflow: hidden; text-overflow: ellipsis;">Novi Sad · Aranj Janoša 9</span>
+        <span style="display: flex; gap: 14px; align-items: center;">
+          <a href="tel:+381658887693" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">+381 65 8887 693</a>
+          <span ref="{{ utilHours }}" class="sb-util-hours" style="display: flex; gap: 14px;"><span style="color: rgba(73,166,183,0.85);">·</span><span>Ponedeljak – petak, 10:00 – 20:00</span></span>
+        </span>
+      </div>
+    </div>
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: 15px clamp(20px, 4vw, 72px); display: flex; align-items: center; justify-content: space-between; gap: clamp(24px, 4vw, 56px);">
+      <a href="#top" aria-label="SOŽE BEAUTY — početna" style="display: block; flex: 0 0 auto;">
+        <img src="assets/img/soze-beauty-bela-2x.png" alt="SOŽE BEAUTY" width="2000" height="1128" style="display: block; height: clamp(40px, 3.4vw, 52px); width: auto;" />
+      </a>
+      <nav aria-label="Glavna navigacija" style="display: flex; align-items: center; gap: clamp(16px, 2vw, 32px);">
+        <a href="#tretmani" ref="{{ navLink1 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Tretmani</a>
+        <a href="#dijagnostika" ref="{{ navLink2 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Dijagnostika</a>
+        <a href="#cenovnik" ref="{{ navLink3 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Cenovnik</a>
+        <a href="#o-nama" ref="{{ navLink4 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">O nama</a>
+        <a href="#iskustva" ref="{{ navLink5 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Iskustva</a>
+        <a href="#kontakt-forma" class="sb-hdr-cta" style="display: inline-flex; align-items: center; min-height: 46px; background: #49A6B7; color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 13px 22px; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Zakažite</a>
+        <button type="button" ref="{{ burgerRef }}" onClick="{{ toggleMenu }}" aria-label="Meni" aria-expanded="{{ menuOpen }}" aria-controls="sb-mobile-menu" class="sb-burger" style="align-items: center; justify-content: center; width: 48px; height: 48px; background: transparent; border: 1px solid rgba(178,219,213,0.4); color: #B2DBD5; font-size: 16px; cursor: pointer;"><span ref="{{ burstRef }}">☰</span></button>
+      </nav>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div id="sb-mobile-menu" class="sb-menu" style="background: rgba(15,63,68,0.98); border-top: 1px solid rgba(178,219,213,0.16); border-bottom: 1px solid rgba(178,219,213,0.16); animation: fadeIn 280ms ease both; max-height: 78vh; overflow-y: auto;">
+        <div class="sb-pad" style="display: flex; flex-direction: column; padding: 6px clamp(20px, 4vw, 72px) 24px;">
+          <a href="#tretmani" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Tretmani</a>
+          <a href="#dijagnostika" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Online dijagnostika</a>
+          <a href="#cenovnik" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Cenovnik</a>
+          <a href="#o-nama" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">O nama</a>
+          <a href="#iskustva" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Iskustva</a>
+          <a href="#rezultati" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Rezultati</a>
+          <a href="#edukacija" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Edukacija</a>
+          <a href="#soze-svet" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">SOŽE svet</a>
+          <a href="#kontakt" onClick="{{ closeMenu }}" style="padding: 16px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Kontakt</a>
+          <a href="#kontakt-forma" onClick="{{ closeMenu }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; margin-top: 22px; background: #49A6B7; color: #0F3F44; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 17px 22px;">Zakažite <span aria-hidden="true" style="font-size: 15px;">→</span></a>
+          <a href="tel:+381658887693" onClick="{{ closeMenu }}" style="display: flex; align-items: center; justify-content: center; min-height: 50px; margin-top: 10px; border: 1px solid rgba(178,219,213,0.5); color: #F5EFE0; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; padding: 15px 22px;">+381 65 8887 693</a>
+        </div>
+      </div>
+    </sc-if>
+  </header>
+
+  <!-- ═══════════ HERO — zamena fotografije: uploads/… (odnos 3:4) ═══════════ -->
+  <section class="sb-pad" id="top" style="position: relative; z-index: 1; max-width: 1440px; margin: 0 auto; padding: clamp(150px, 15vw, 210px) clamp(20px, 4vw, 72px) 0;">
+    <div class="sb-hero" style="display: flex; flex-wrap: wrap; align-items: stretch; gap: clamp(30px, 4vw, 60px);">
+      <div class="sb-hero-text sb-fluid" style="flex: 1 1 520px; min-width: 290px; display: flex; flex-direction: column; justify-content: flex-start;">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: clamp(24px, 3.4vw, 44px);">
+          <span style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; animation: fadeIn 1.2s ease both;">Nega lica · Nega tela · Online dijagnostika</span>
+        </div>
+        <h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(42px, 7.2vw, 108px); line-height: 1.0; letter-spacing: -0.028em; color: #F5EFE0; text-wrap: balance;">
+          <span style="display: block; overflow: hidden; padding: 0.1em 0.06em; margin: -0.1em -0.06em;"><span style="display: block; animation: riseIn 1.2s cubic-bezier(0.22,0.61,0.36,1) both;">Nega počinje</span></span>
+          <span style="display: block; overflow: hidden; padding: 0.1em 0.06em; margin: -0.1em -0.06em;"><span style="display: block; animation: riseIn 1.2s cubic-bezier(0.22,0.61,0.36,1) 0.15s both; color: #B2DBD5; font-style: italic;">razumevanjem.</span></span>
+        </h1>
+        <p style="max-width: 46ch; margin: clamp(24px, 3vw, 40px) 0 0; font-size: 17px; line-height: 1.75; color: rgba(245,239,224,0.86); animation: fadeIn 1.4s ease 0.45s both; text-wrap: pretty;">Vašoj koži nije potreban nasumično izabran tretman. Potrebni su pažljiva procena, stručan pristup i nega prilagođena vama.</p>
+        <div class="sb-hero-cta" style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(26px, 3.2vw, 44px); animation: fadeIn 1.4s ease 0.65s both;">
+          <a href="#dijagnostika" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; background: #49A6B7; color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 28px; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Zakažite online dijagnostiku <span style="font-size: 14px;">→</span></a>
+          <a href="#tretmani" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; border: 1px solid rgba(178,219,213,0.5); color: #F5EFE0; font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 28px; transition: border-color 350ms ease, background 350ms ease;" style-hover="border-color: #B2DBD5; background: rgba(178,219,213,0.08);">Istražite tretmane <span style="font-size: 14px;">↓</span></a>
+        </div>
+      </div>
+
+      <div class="sb-hero-media sb-fluid" style="flex: 1 1 420px; min-width: 280px; position: relative;">
+        <span ref="{{ vLabel }}" class="sb-vlabel" style="position: absolute; left: -30px; top: 50%; transform: rotate(-90deg) translateX(-50%); transform-origin: left center; font-size: 11px; font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(245,239,224,0.62); white-space: nowrap;">SOŽE BEAUTY / NOVI SAD / OD 2014.</span>
+        <div style="border: 1px solid rgba(178,219,213,0.28); padding: 8px; animation: fadeIn 1.2s ease 0.25s both;">
+          <div class="sb-hero-frame" style="position: relative; aspect-ratio: 3 / 4; overflow: hidden;">
+            <img ref="{{ heroImg }}" class="sb-hero-img" src="assets/img/kozmeticki-salon-novi-sad-soze-beauty.webp" alt="Ženja Trbojević u salonu SOŽE BEAUTY u Novom Sadu" width="1920" height="950" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 82% 30%; animation: clipUp 1.5s cubic-bezier(0.22,0.61,0.36,1) 0.35s both;" />
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,63,68,0.16) 0%, rgba(15,63,68,0) 40%, rgba(15,63,68,0.62) 100%);"></div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.7);">
+          <span>Salon SOŽE BEAUTY</span><span style="color: #49A6B7;">Novi Sad</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sb-stat" style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: clamp(20px, 3vw, 48px); margin-top: clamp(34px, 4vw, 56px); padding-top: clamp(24px, 3vw, 38px); border-top: 1px solid rgba(178,219,213,0.16); animation: fadeIn 1.4s ease 0.8s both;">
+      <div style="flex: 0 0 auto; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(74px, 12.5vw, 190px); line-height: 0.78; letter-spacing: -0.05em; color: #49A6B7;">80%</div>
+      <p style="flex: 1 1 260px; max-width: 34ch; margin: 0 0 clamp(6px, 1vw, 16px); font-family: 'Playfair Display', Georgia, serif; font-size: clamp(19px, 2vw, 28px); line-height: 1.35; color: #F5EFE0;">novih klijenata dolazi <span style="font-style: italic; color: #B2DBD5;">putem preporuke</span>.</p>
+      <span style="flex: 0 1 auto; margin-bottom: clamp(8px, 1.2vw, 20px); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,239,224,0.7);">Od 2014. do danas</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ TRAKA POVERENJA ═══════════ -->
+  <section aria-label="Traka poverenja" style="position: relative; z-index: 1; margin-top: clamp(50px, 6vw, 84px); border-top: 1px solid rgba(178,219,213,0.22); border-bottom: 1px solid rgba(178,219,213,0.22); overflow: hidden; background: #0F3F44;">
+    <div ref="{{ tickerRef }}" style="display: flex; width: max-content; animation: ticker 52s linear infinite;" style-hover="animation-play-state: paused;">
+      <div style="display: flex; align-items: center; gap: 40px; padding: 18px 20px; white-space: nowrap; font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,239,224,0.82);">
+        <span>Od 2014.</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 19px; letter-spacing: 0; text-transform: none; color: #B2DBD5;">80% novih klijenata putem preporuke</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span>Nega lica</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span>Nega tela</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span>Online dijagnostika</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span>Javno priznat organizator obrazovanja odraslih</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 19px; letter-spacing: 0; text-transform: none; color: #B2DBD5;">Novi Sad</span><span style="color: rgba(73,166,183,0.85);">/</span>
+      </div>
+      <div aria-hidden="true" style="display: flex; align-items: center; gap: 40px; padding: 18px 20px; white-space: nowrap; font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,239,224,0.82);">
+        <span>Od 2014.</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 19px; letter-spacing: 0; text-transform: none; color: #B2DBD5;">80% novih klijenata putem preporuke</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span>Nega lica</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span>Nega tela</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span>Online dijagnostika</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span>Javno priznat organizator obrazovanja odraslih</span><span style="color: rgba(73,166,183,0.85);">/</span>
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 19px; letter-spacing: 0; text-transform: none; color: #B2DBD5;">Novi Sad</span><span style="color: rgba(73,166,183,0.85);">/</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 01 / SOŽE PRISTUP ═══════════ -->
+  <section class="sb-pad" id="pristup" style="position: relative; z-index: 1; scroll-margin-top: 140px; max-width: 1440px; margin: 0 auto; padding: clamp(74px, 10vw, 150px) clamp(20px, 4vw, 72px);">
+    <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; padding-bottom: 20px; border-bottom: 1px solid rgba(178,219,213,0.18);">01 / SOŽE pristup</div>
+    <div class="sb-two" style="display: flex; flex-wrap: wrap; gap: clamp(32px, 5vw, 84px); margin-top: clamp(34px, 4.4vw, 62px);">
+      <div class="sb-flat sb-fluid" style="flex: 1 1 540px; min-width: 290px;">
+        <h2 data-reveal="1" class="sb-o1" style="margin: 0; max-width: 19ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.4vw, 66px); line-height: 1.06; letter-spacing: -0.024em; color: #F5EFE0; text-wrap: pretty;">Ne počinjemo tretmanom. Počinjemo <span style="font-style: italic; color: #B2DBD5;">razgovorom</span>.</h2>
+        <p data-reveal="1" class="sb-o2" style="max-width: 50ch; margin: clamp(24px, 3vw, 38px) 0 0; font-size: 17px; line-height: 1.8; color: rgba(245,239,224,0.86); text-wrap: pretty;">Svaka koža ima svoju istoriju, potrebe i ritam. Zato tretman ne biramo pre nego što razumemo osobu, stanje kože i njena očekivanja.</p>
+        <blockquote data-reveal="1" class="sb-o4" style="margin: clamp(34px, 4.4vw, 64px) 0 0; padding: 26px 0 0; border-top: 1px solid rgba(178,219,213,0.18); max-width: 30ch; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(20px, 2.2vw, 30px); line-height: 1.38; color: #F5EFE0;">„P.S. Ni mi ne znamo šta je potrebno vašoj koži dok je detaljno ne pogledamo.”</blockquote>
+        <div data-reveal="1" class="sb-o5" style="display: flex; align-items: center; gap: 12px; margin-top: 18px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,239,224,0.7);">
+          <span style="width: 26px; height: 1px; background: rgba(73,166,183,0.9);"></span>
+          <span>Ženja Trbojević, osnivač SOŽE BEAUTY</span>
+        </div>
+      </div>
+      <div data-reveal="1" ref="{{ pristupImg }}" class="sb-o3 sb-fluid" style="flex: 1 1 320px; min-width: 240px; align-self: flex-end;">
+        <div style="border: 1px solid rgba(178,219,213,0.28); padding: 8px;">
+          <div style="position: relative; aspect-ratio: 4 / 5; overflow: hidden;">
+            <!-- ZAMENA FOTOGRAFIJE: konsultacija / pregled kože, odnos 4:5 -->
+            <img ref="{{ pristupPhoto }}" class="sb-pristup-photo" src="assets/img/soze-beauty-tretman-hd.webp" alt="Kozmetičarka i klijentkinja u razgovoru pre tretmana u salonu SOŽE BEAUTY" width="1546" height="1023" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 35%;" />
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,63,68,0) 45%, rgba(15,63,68,0.55) 100%);"></div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.7);"><span>Procena kože</span><span>SOŽE BEAUTY</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 02 / ŽENJA TRBOJEVIĆ ═══════════ -->
+  <section id="o-nama" style="position: relative; z-index: 1; scroll-margin-top: 140px; overflow: hidden; background: #12494F; border-top: 1px solid rgba(178,219,213,0.18); border-bottom: 1px solid rgba(178,219,213,0.18);">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(76px, 10vw, 150px) clamp(20px, 4vw, 72px);">
+      <div data-reveal="1" style="display: flex; flex-wrap: wrap; gap: 16px 24px; justify-content: space-between; align-items: baseline; font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; padding-bottom: 20px; border-bottom: 1px solid rgba(178,219,213,0.18);">
+        <span>02 / Ženja Trbojević</span>
+        <span style="color: rgba(245,239,224,0.7); font-weight: 400;">Osnivač · od 2014.</span>
+      </div>
+
+      <div class="sb-two" style="display: flex; flex-wrap: wrap; gap: clamp(30px, 4.6vw, 78px); margin-top: clamp(36px, 4.6vw, 68px); align-items: flex-start;">
+        <div data-reveal="1" ref="{{ founderImg }}" class="sb-o2 sb-fluid" style="flex: 1 1 320px; min-width: 250px; position: relative;">
+          <div style="border: 1px solid rgba(178,219,213,0.28); padding: 8px; background: linear-gradient(180deg, rgba(178,219,213,0.1), rgba(178,219,213,0.02));">
+            <div style="position: relative; aspect-ratio: 3 / 4; overflow: hidden; background: linear-gradient(180deg, #12494F 0%, #0F3F44 100%);">
+              <!-- ZAMENA FOTOGRAFIJE: autentičan Ženjin portret -->
+              <img ref="{{ founderPhoto }}" src="assets/img/zenja-img.webp" alt="Portret Ženje Trbojević, osnivača SOŽE BEAUTY" width="334" height="493" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center bottom;" />
+            </div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.7);"><span>Ženja Trbojević</span><span style="color: #49A6B7;">Novi Sad</span></div>
+        </div>
+
+        <div class="sb-flat sb-fluid" style="flex: 1 1 460px; min-width: 290px;">
+          <h2 data-reveal="1" class="sb-o1" style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 5vw, 76px); line-height: 1.02; letter-spacing: -0.03em; color: #F5EFE0;">Lepota se vidi.<br /><span style="font-style: italic; color: #B2DBD5;">Nega</span> se oseća.</h2>
+          <p data-reveal="1" class="sb-o3" style="max-width: 44ch; margin: clamp(24px, 3vw, 38px) 0 0; font-size: 17px; line-height: 1.75; color: #F5EFE0; text-wrap: pretty;">Ja sam Ženja Trbojević. Po struci sam kozmetičar, fizioterapeut i diplomirani psiholog.</p>
+          <p data-reveal="1" class="sb-o3" style="max-width: 48ch; margin: 18px 0 0; font-size: 16px; line-height: 1.8; color: rgba(245,239,224,0.86); text-wrap: pretty;">Još na početku svog rada shvatila sam koliko su nega, spoljašnja lepota, unutrašnji mir i odnos prema sebi povezani. Iz te ideje nastao je SOŽE BEAUTY.</p>
+
+          <blockquote data-reveal="1" class="sb-o3" style="margin: clamp(30px, 3.8vw, 52px) 0 0; padding: 24px 0 0; border-top: 1px solid rgba(178,219,213,0.18); max-width: 32ch; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(21px, 2.4vw, 33px); line-height: 1.36; color: #F5EFE0;">„Kao kozmetičar negujem vašu kožu, a kao <span style="font-style: italic; color: #B2DBD5;">diplomirani psiholog</span> i vašu dušu.”</blockquote>
+
+          <p data-reveal="1" class="sb-o3" style="display: flex; gap: 14px; align-items: flex-start; margin: 26px 0 0; max-width: 42ch; font-size: 15px; line-height: 1.7; color: rgba(245,239,224,0.78);">
+            <span aria-hidden="true" style="flex: 0 0 auto; width: 18px; height: 1px; margin-top: 13px; background: rgba(73,166,183,0.9);"></span>
+            <span style="font-style: italic;">„Moj muž je odlučio da me digitalizuje, pa neka ovo bude naše upoznavanje pre upoznavanja.”</span>
+          </p>
+
+          <div data-reveal="1" class="sb-o4 sb-quals" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; margin-top: clamp(30px, 3.6vw, 48px); background: rgba(178,219,213,0.18);">
+            <div style="background: #12494F; padding: 16px 12px 16px 0; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.85);">Kozmetičar</div>
+            <div style="background: #12494F; padding: 16px 12px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.85);">Fizioterapeut</div>
+            <div style="background: #12494F; padding: 16px 12px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.85);">Diplomirani psiholog</div>
+            <div style="background: #12494F; padding: 16px 12px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #B2DBD5;">Osnivač SOŽE BEAUTY</div>
+          </div>
+
+          <!-- LINK ZA POVEZIVANJE: stranica „O nama / Ženjina priča” -->
+          <a href="#o-nama" data-reveal="1" class="sb-o5 sb-inline-link" style="display: inline-flex; align-items: center; gap: 12px; margin-top: clamp(26px, 3.2vw, 42px); font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #49A6B7; border-bottom: 1px solid rgba(73,166,183,0.5); padding-bottom: 10px;" style-hover="color: #B2DBD5;">Cela priča o SOŽE BEAUTY <span style="font-size: 14px;">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 03 / POTREBE KOŽE ═══════════ -->
+  <section id="potrebe" style="position: relative; z-index: 1; scroll-margin-top: 140px; background: #F5EFE0; color: #0F3F44;">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(70px, 9vw, 132px) clamp(20px, 4vw, 72px);">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 26px; padding-bottom: clamp(30px, 3.6vw, 50px); border-bottom: 1px solid rgba(15,63,68,0.22);">
+        <div>
+          <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(15,63,68,0.9); margin-bottom: clamp(20px, 2.6vw, 34px);">03 / Potrebe kože</div>
+          <h2 data-reveal="1" style="margin: 0; max-width: 22ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.8vw, 56px); line-height: 1.08; letter-spacing: -0.022em; text-wrap: pretty;">Recite nam šta primećujete. Zajedno biramo <span style="font-style: italic; color: #49A6B7;">pravac</span> nege.</h2>
+        </div>
+        <p data-reveal="1" style="max-width: 30ch; margin: 0; font-size: 16px; line-height: 1.8; color: rgba(15,63,68,0.82); text-wrap: pretty;">Ne morate znati nazive tretmana. Dovoljno je da opišete šta vidite i osećate na svojoj koži.</p>
+      </div>
+
+      <div ref="{{ rowsRef }}" style="position: relative;">
+        <div ref="{{ previewRef }}" aria-hidden="true" class="sb-preview" style="position: absolute; right: 0; top: 0; width: 230px; height: 290px; opacity: 0; pointer-events: none; transition: opacity 450ms ease, transform 650ms cubic-bezier(0.22,0.61,0.36,1); border: 1px solid rgba(15,63,68,0.25); padding: 6px; background: #E2E8E4; z-index: 4;">
+          <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
+            <img ref="{{ previewImg }}" src="assets/img/tretmani-lica-2.jpg" alt="" width="843" height="1500" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%;" />
+            <span ref="{{ previewLabel }}" style="position: absolute; left: 10px; bottom: 10px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF;"></span>
+          </div>
+        </div>
+
+        <!-- SADRŽAJ: kategorije potreba prate stvarne SOŽE usluge (vidi needs u logici) -->
+        <sc-for list="{{ needs }}" as="n" hint-placeholder-count="6">
+          <a href="#cenovnik" data-reveal="1" onMouseEnter="{{ n.enter }}" onMouseLeave="{{ n.leave }}" onFocus="{{ n.enter }}" onBlur="{{ n.leave }}" class="sb-need" style="display: grid; grid-template-columns: 42px minmax(0, 1fr) auto; align-items: baseline; gap: clamp(12px, 2.6vw, 40px); padding: clamp(22px, 2.6vw, 32px) 4px; border-bottom: 1px solid rgba(15,63,68,0.16); color: #0F3F44; transition: padding-left 450ms cubic-bezier(0.22,0.61,0.36,1), background 450ms ease;" style-hover="padding-left: 18px; background: rgba(73,166,183,0.1);">
+            <span style="font-size: 12px; font-weight: 500; letter-spacing: 0.16em; color: #2E7F8C;">{{ n.num }}</span>
+            <span class="sb-need-inner" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px;">
+              <span class="sb-need-title" style="flex: 0 0 clamp(232px, 33vw, 500px); max-width: 100%; white-space: nowrap; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(21px, 2.4vw, 33px); line-height: 1.2; letter-spacing: -0.018em;">{{ n.title }}</span>
+              <span class="sb-need-body sb-fluid" style="flex: 0 1 40ch; min-width: 220px;">
+                <span style="display: block; font-size: 15px; line-height: 1.65; color: rgba(15,63,68,0.82);">{{ n.text }}</span>
+                <span style="display: inline-block; margin-top: 10px; padding: 5px 10px; border: 1px solid rgba(15,63,68,0.25); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(15,63,68,0.9);">{{ n.tag }}</span>
+              </span>
+            </span>
+            <span aria-hidden="true" style="font-size: 18px; color: #2E7F8C;">→</span>
+          </a>
+        </sc-for>
+      </div>
+
+      <a href="#dijagnostika" data-reveal="1" class="sb-inline-link" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; margin-top: clamp(34px, 4vw, 52px); border: 1px solid rgba(15,63,68,0.35); color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 17px 26px; transition: background 350ms ease, color 350ms ease, border-color 350ms ease;" style-hover="background: #0F3F44; color: #F5EFE0; border-color: #0F3F44;">Opišite nam svoju kožu <span style="font-size: 14px;">→</span></a>
+    </div>
+  </section>
+
+  <!-- ═══════════ 04 / KAKO FUNKCIONIŠE ONLINE DIJAGNOSTIKA ═══════════ -->
+  <section id="dijagnostika" style="position: relative; z-index: 1; scroll-margin-top: 140px; background: #0F3F44; border-bottom: 1px solid rgba(178,219,213,0.18); overflow: hidden;">
+    <div class="sb-pad" style="position: relative; max-width: 1440px; margin: 0 auto; padding: clamp(74px, 10vw, 148px) clamp(20px, 4vw, 72px);">
+      <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; padding-bottom: 20px; border-bottom: 1px solid rgba(178,219,213,0.18);">04 / Kako funkcioniše online dijagnostika</div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: clamp(30px, 4.6vw, 80px); margin-top: clamp(34px, 4.4vw, 60px); align-items: flex-start;">
+        <div class="sb-fluid" style="flex: 1 1 480px; min-width: 290px;">
+          <h2 data-reveal="1" style="margin: 0; max-width: 20ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.6vw, 68px); line-height: 1.04; letter-spacing: -0.026em; color: #F5EFE0; text-wrap: pretty;">Ne morate unapred znati koji vam je tretman <span style="font-style: italic; color: #B2DBD5;">potreban</span>.</h2>
+          <p data-reveal="1" style="max-width: 48ch; margin: clamp(22px, 2.8vw, 36px) 0 0; font-size: 17px; line-height: 1.8; color: rgba(245,239,224,0.86); text-wrap: pretty;">Opišite šta primećujete na svojoj koži. Na osnovu razgovora i procene, usmerićemo vas ka sledećem smislenom koraku.</p>
+          <div data-reveal="1" class="sb-cta-row" style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(26px, 3.2vw, 42px);">
+            <!-- LINK ZA POVEZIVANJE: stvarni sistem online dijagnostike -->
+            <a href="#kontakt-forma" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; background: #49A6B7; color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 19px 30px; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Zakažite online dijagnostiku <span style="font-size: 14px;">→</span></a>
+          </div>
+          <p data-reveal="1" style="margin: clamp(24px, 3vw, 36px) 0 0; padding-top: 18px; border-top: 1px solid rgba(178,219,213,0.18); max-width: 36ch; font-size: 14px; line-height: 1.7; color: rgba(245,239,224,0.78);">Dijagnostika ne zamenjuje lekarski pregled. Ona služi da zajedno odredimo pravac nege pre nego što izaberemo tretman.</p>
+        </div>
+
+        <div class="sb-fluid" style="flex: 1 1 380px; min-width: 260px; display: flex; flex-direction: column;">
+          <!-- SADRŽAJ ZA POTVRDU: stvarni koraci procesa dijagnostike (klijent dostavlja) -->
+          <sc-for list="{{ dijagSteps }}" as="d" hint-placeholder-count="3">
+            <div data-reveal="1" style="display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; gap: clamp(18px, 2.4vw, 34px); padding: clamp(22px, 2.6vw, 32px) 0; border-top: 1px solid rgba(178,219,213,0.18);">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 66px); line-height: 0.9; letter-spacing: -0.03em; color: rgba(178,219,213,0.6);">{{ d.num }}</span>
+              <span>
+                <span style="display: block; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #49A6B7;">{{ d.label }}</span>
+                <span style="display: block; margin-top: 12px; max-width: 36ch; font-size: 15px; line-height: 1.7; color: rgba(245,239,224,0.8);">{{ d.text }}</span>
+              </span>
+            </div>
+          </sc-for>
+          <div style="border-top: 1px solid rgba(178,219,213,0.18);"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 05 / ODABRANI TRETMANI ═══════════ -->
+  <section id="tretmani" style="position: relative; z-index: 1; scroll-margin-top: 140px;">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(74px, 10vw, 140px) clamp(20px, 4vw, 72px) clamp(28px, 3.4vw, 44px);">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px;">
+        <div>
+          <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; margin-bottom: clamp(20px, 2.6vw, 32px);">05 / Odabrani tretmani</div>
+          <h2 data-reveal="1" style="margin: 0; max-width: 24ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.8vw, 56px); line-height: 1.06; letter-spacing: -0.024em; color: #F5EFE0; text-wrap: pretty;">Grupe tretmana koje radimo <span style="font-style: italic; color: #B2DBD5;">u salonu</span>.</h2>
+        </div>
+        <span ref="{{ swipeHint }}" class="sb-swipe" style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.7);">Prevucite →</span>
+      </div>
+      <p data-reveal="1" style="max-width: 54ch; margin: clamp(20px, 2.4vw, 30px) 0 0; font-size: 16px; line-height: 1.8; color: rgba(245,239,224,0.82); text-wrap: pretty;">Grupe tretmana odgovaraju kategorijama iz cenovnika. Tačni protokoli, trajanja i opisi pojedinačnih tretmana nalaze se na stranicama tretmana.</p>
+    </div>
+
+    <!-- SADRŽAJ: kategorije iz cenovnika; opisi tretmana čekaju potvrdu klijenta -->
+    <div id="tretmani-lista" ref="{{ carRef }}" class="no-bar sb-car sb-pad" role="group" aria-label="Grupe tretmana" style="display: flex; gap: clamp(12px, 1.4vw, 20px); overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 clamp(20px, 4vw, 72px) clamp(22px, 2.6vw, 32px);">
+      <sc-for list="{{ cards }}" as="c" hint-placeholder-count="5">
+        <!-- LINK ZA POVEZIVANJE: stranica konkretnog tretmana (/tretmani/...) -->
+        <a href="{{ c.href }}" class="sb-card" style="flex: 0 0 clamp(250px, 25vw, 320px); scroll-snap-align: start; display: flex; flex-direction: column; color: #F5EFE0; border: 1px solid rgba(178,219,213,0.22); padding: clamp(12px, 1.2vw, 16px); transition: border-color 450ms ease, transform 550ms cubic-bezier(0.22,0.61,0.36,1);" style-hover="border-color: rgba(178,219,213,0.55); transform: translateY(-8px);">
+          <div style="position: relative; aspect-ratio: 1 / 1; overflow: hidden; background: #12494F;">
+            <!-- ZAMENA FOTOGRAFIJE: img i objectPosition po kartici (vidi cards u logici) -->
+            <img src="{{ c.img }}" alt="{{ c.photo }}" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: {{ c.pos }};" />
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,63,68,0) 55%, rgba(15,63,68,0.4) 100%);"></div>
+          </div>
+          <div style="display: flex; gap: 8px; margin: 16px 0 10px; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #49A6B7;">
+            <span>{{ c.num }}</span><span style="color: rgba(178,219,213,0.5);">/</span><span style="color: rgba(245,239,224,0.75);">{{ c.cat }}</span>
+          </div>
+          <h3 style="margin: 0 0 12px; min-height: 2.36em; display: flex; align-items: flex-start; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(21px, 1.9vw, 26px); line-height: 1.18; letter-spacing: -0.018em;">{{ c.title }}</h3>
+          <p style="margin: 0; min-height: 4.95em; font-size: 15px; line-height: 1.65; color: rgba(245,239,224,0.8);">{{ c.text }}</p>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: auto; padding-top: 14px; border-top: 1px solid rgba(178,219,213,0.2); font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #49A6B7;">
+            <span>Detaljnije o tretmanu</span><span aria-hidden="true" style="font-size: 15px;">→</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 72px) clamp(70px, 9vw, 118px); display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px;">
+      <div class="sb-arrows" style="display: flex; gap: 8px;">
+        <button type="button" aria-label="Prethodni tretman" aria-controls="tretmani-lista" onClick="{{ prev }}" style="width: 48px; height: 48px; background: transparent; border: 1px solid rgba(178,219,213,0.4); color: #B2DBD5; font-size: 16px; cursor: pointer; transition: background 350ms ease, color 350ms ease;" style-hover="background: #49A6B7; color: #0F3F44;">←</button>
+        <button type="button" aria-label="Sledeći tretman" aria-controls="tretmani-lista" onClick="{{ next }}" style="width: 48px; height: 48px; background: transparent; border: 1px solid rgba(178,219,213,0.4); color: #B2DBD5; font-size: 16px; cursor: pointer; transition: background 350ms ease, color 350ms ease;" style-hover="background: #49A6B7; color: #0F3F44;">→</button>
+      </div>
+      <sc-for list="{{ dots }}" as="d" hint-placeholder-count="5">
+        <button type="button" onClick="{{ d.go }}" aria-label="{{ d.label }}" class="sb-dot" style="width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0;">
+          <span style="display: block; width: 100%; height: 2px; background: {{ d.bg }}; transition: background 350ms ease;"></span>
+        </button>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ═══════════ 06 / CENOVNIK — SVE CENE SE MENJAJU U priceCategories (logika) ═══════════ -->
+  <section id="cenovnik" style="position: relative; z-index: 1; scroll-margin-top: 140px; background: #12494F; border-top: 1px solid rgba(178,219,213,0.18); border-bottom: 1px solid rgba(178,219,213,0.18);">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(70px, 9vw, 140px) clamp(20px, 4vw, 72px);">
+      <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; padding-bottom: 20px; border-bottom: 1px solid rgba(178,219,213,0.18);">06 / Cenovnik</div>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-top: clamp(30px, 3.8vw, 54px);">
+        <h2 data-reveal="1" class="sb-price-h2" style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.6vw, 68px); line-height: 1.04; letter-spacing: -0.026em; color: #F5EFE0;"><span style="font-style: italic; color: #B2DBD5;">Cenovnik</span> usluga</h2>
+        <p data-reveal="1" style="max-width: 34ch; margin: 0; font-size: 15px; line-height: 1.75; color: rgba(245,239,224,0.8);">Cene su iskazane po pojedinačnom tretmanu, osim kada je u nazivu navedeno drugačije. <span class="sb-desktop-only" style="color: #B2DBD5;">Datum važenja cenovnika — SADRŽAJ ZA POTVRDU.</span></p>
+      </div>
+
+      <!-- DESKTOP: kategorije levo (30%) + stavke desno (70%) -->
+      <div ref="{{ priceDesktop }}" class="sb-price-desktop" style="display: flex; gap: clamp(28px, 3.6vw, 56px); margin-top: clamp(32px, 4vw, 56px);">
+        <div role="tablist" aria-label="Kategorije cenovnika" style="flex: 0 0 30%; display: flex; flex-direction: column; border-top: 1px solid rgba(178,219,213,0.18);">
+          <sc-for list="{{ priceCats }}" as="p" hint-placeholder-count="8">
+            <button type="button" role="tab" aria-selected="{{ p.selected }}" onClick="{{ p.select }}" style="display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 56px; padding: 16px 16px 16px {{ p.padLeft }}; text-align: left; background: {{ p.bg }}; border: none; border-left: 2px solid {{ p.bar }}; border-bottom: 1px solid rgba(178,219,213,0.14); cursor: pointer; font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: {{ p.color }}; transition: background 300ms ease, color 300ms ease, border-color 300ms ease;">
+              <span>{{ p.name }}</span>
+              <span style="font-size: 12px; font-weight: 400; letter-spacing: 0.06em; color: {{ p.countColor }};">{{ p.count }}</span>
+            </button>
+          </sc-for>
+        </div>
+
+        <div style="flex: 1 1 auto; min-width: 0;">
+          <h3 style="margin: 0 0 clamp(20px, 2.4vw, 30px); font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-style: italic; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.2; color: #B2DBD5;">{{ activeName }}</h3>
+          <sc-if value="{{ activeHasItems }}" hint-placeholder-val="{{ false }}">
+            <div style="border-top: 1px solid rgba(178,219,213,0.18);">
+              <sc-for list="{{ activeItems }}" as="i" hint-placeholder-count="4">
+                <div style="display: flex; align-items: baseline; justify-content: space-between; gap: clamp(20px, 4vw, 60px); padding: 18px 0; border-bottom: 1px solid rgba(178,219,213,0.14);">
+                  <span style="min-width: 0;">
+                    <span style="display: block; font-size: 16px; line-height: 1.5; color: #F5EFE0;">{{ i.name }}</span>
+                    <span style="display: block; margin-top: 5px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(245,239,224,0.7);">{{ i.noteText }}</span>
+                  </span>
+                  <span style="flex: 0 0 auto; font-size: 17px; font-weight: 500; letter-spacing: 0.02em; color: #B2DBD5; white-space: nowrap;">{{ i.price }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{ activeEmpty }}" hint-placeholder-val="{{ true }}">
+            <div style="border: 1px dashed rgba(178,219,213,0.4); padding: clamp(22px, 2.6vw, 32px);">
+              <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #B2DBD5;">Stavke i cene — sadržaj za potvrdu</div>
+              <p style="margin: 14px 0 0; max-width: 52ch; font-size: 15px; line-height: 1.7; color: rgba(245,239,224,0.82);">Nazivi tretmana i cene za ovu kategoriju unose se u <span style="color: #B2DBD5;">priceCategories</span> u logici komponente. Struktura reda: naziv levo, cena desno, opciona napomena ispod naziva.</p>
+              <div style="margin-top: 22px; border-top: 1px solid rgba(178,219,213,0.16);">
+                <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 30px; padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12);"><span style="font-size: 16px; color: rgba(245,239,224,0.5);">Naziv tretmana</span><span style="font-size: 17px; color: rgba(178,219,213,0.5);">Cena</span></div>
+                <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 30px; padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12);"><span style="font-size: 16px; color: rgba(245,239,224,0.5);">Naziv tretmana</span><span style="font-size: 17px; color: rgba(178,219,213,0.5);">Cena</span></div>
+                <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 30px; padding: 16px 0;"><span style="font-size: 16px; color: rgba(245,239,224,0.5);">Naziv tretmana</span><span style="font-size: 17px; color: rgba(178,219,213,0.5);">Cena</span></div>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+
+      <!-- MOBILNI: accordion po kategorijama -->
+      <div ref="{{ priceMobile }}" class="sb-price-mobile" style="margin-top: clamp(28px, 3.4vw, 44px); border-top: 1px solid rgba(178,219,213,0.18);">
+        <sc-for list="{{ priceCats }}" as="p" hint-placeholder-count="8">
+          <div style="border-bottom: 1px solid rgba(178,219,213,0.14);">
+            <button type="button" onClick="{{ p.toggle }}" aria-expanded="{{ p.open }}" style="display: flex; align-items: center; justify-content: space-between; gap: 14px; width: 100%; min-height: 60px; padding: 16px 0; background: transparent; border: none; cursor: pointer; text-align: left;">
+              <span style="font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: {{ p.color }};">{{ p.name }}</span>
+              <span aria-hidden="true" style="flex: 0 0 auto; font-size: 18px; color: #B2DBD5;">{{ p.sign }}</span>
+            </button>
+            <sc-if value="{{ p.open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding: 0 0 20px;">
+                <sc-for list="{{ p.items }}" as="i" hint-placeholder-count="0">
+                  <div class="sb-price-row" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 20px; padding: 14px 0; border-top: 1px solid rgba(178,219,213,0.12);">
+                    <span class="sb-price-name" style="flex: 1 1 60%; min-width: 0; font-size: 15px; line-height: 1.5; color: #F5EFE0;">{{ i.name }}</span>
+                    <span class="sb-price-price" style="flex: 0 0 auto; font-size: 16px; font-weight: 500; color: #B2DBD5; white-space: nowrap;">{{ i.price }}</span>
+                    <span style="flex: 1 1 100%; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(245,239,224,0.7);">{{ i.noteText }}</span>
+                  </div>
+                </sc-for>
+                <sc-if value="{{ p.empty }}" hint-placeholder-val="{{ true }}">
+                  <div style="border: 1px dashed rgba(178,219,213,0.4); padding: 18px;">
+                    <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #B2DBD5;">Stavke i cene — sadržaj za potvrdu</div>
+                    <p style="margin: 12px 0 0; font-size: 14px; line-height: 1.7; color: rgba(245,239,224,0.8);">Unose se u priceCategories u logici komponente.</p>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+
+      <div data-reveal="1" style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: clamp(32px, 4vw, 52px); padding-top: clamp(22px, 2.6vw, 32px); border-top: 1px solid rgba(178,219,213,0.18);">
+        <p style="margin: 0; max-width: 40ch; font-size: 16px; line-height: 1.7; color: rgba(245,239,224,0.86);">Niste sigurni koji tretman je za vas? Započnite online dijagnostikom.</p>
+        <a href="#kontakt-forma" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; border: 1px solid rgba(178,219,213,0.5); color: #F5EFE0; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 17px 26px; transition: background 350ms ease, color 350ms ease, border-color 350ms ease;" style-hover="background: #49A6B7; color: #0F3F44; border-color: #49A6B7;">Zakažite dijagnostiku <span style="font-size: 14px;">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 07 / REZULTATI ═══════════ -->
+  <section id="rezultati" style="position: relative; z-index: 1; scroll-margin-top: 140px;">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(70px, 9vw, 130px) clamp(20px, 4vw, 72px);">
+      <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; padding-bottom: 20px; border-bottom: 1px solid rgba(178,219,213,0.18);">07 / Rezultati</div>
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-top: clamp(30px, 3.8vw, 52px);">
+        <h2 data-reveal="1" style="margin: 0; max-width: 22ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.8vw, 56px); line-height: 1.06; letter-spacing: -0.024em; color: #F5EFE0; text-wrap: pretty;">Rezultat koji se vidi. Pristup koji se <span style="font-style: italic; color: #B2DBD5;">oseća</span>.</h2>
+        <p data-reveal="1" style="max-width: 32ch; margin: 0; font-size: 15px; line-height: 1.75; color: rgba(245,239,224,0.8);">Prikazujemo samo rezultate za koje imamo saglasnost klijenta i uporedive fotografije.</p>
+      </div>
+
+      <div class="sb-results" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(16px, 1.8vw, 24px); margin-top: clamp(32px, 4vw, 56px);">
+
+        <div data-reveal="1" class="sb-result" style="border: 1px solid rgba(178,219,213,0.22); padding: clamp(12px, 1.2vw, 16px);">
+          <div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #12494F;">
+            <img src="assets/img/01-rezultat-tekstura-pre-posle.webp" alt="Pre i posle: koža lica sa neravnom teksturom i zapušenim porama, nakon tretmana vidno glađa i mirnija" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <span style="position: absolute; left: 10px; top: 10px; padding: 4px 9px; background: rgba(12,73,79,0.72); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #F5EFE0;">Pre</span>
+            <span style="position: absolute; right: 10px; top: 10px; padding: 4px 9px; background: rgba(12,73,79,0.72); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #F5EFE0;">Posle</span>
+            <span style="position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(245,239,224,0.35);"></span>
+          </div>
+          <div style="display: flex; gap: 8px; margin: 16px 0 10px; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #49A6B7;">
+            <span>Rezultat 01</span><span style="color: rgba(178,219,213,0.5);">/</span><span style="color: rgba(245,239,224,0.75);">Lice</span>
+          </div>
+          <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(20px, 1.9vw, 25px); line-height: 1.2; color: #F5EFE0;">Neravna tekstura i zapušene pore</h3>
+        </div>
+
+        <div data-reveal="1" class="sb-result" style="border: 1px solid rgba(178,219,213,0.22); padding: clamp(12px, 1.2vw, 16px);">
+          <div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #12494F;">
+            <img src="assets/img/02-rezultat-telo-pre-posle.webp" alt="Pre i posle: koža stomaka sa strijama i nejednakim tonom, nakon tretmana zategnutija i ujednačenija" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <span style="position: absolute; left: 10px; top: 10px; padding: 4px 9px; background: rgba(12,73,79,0.72); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #F5EFE0;">Pre</span>
+            <span style="position: absolute; right: 10px; top: 10px; padding: 4px 9px; background: rgba(12,73,79,0.72); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #F5EFE0;">Posle</span>
+            <span style="position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(245,239,224,0.35);"></span>
+          </div>
+          <div style="display: flex; gap: 8px; margin: 16px 0 10px; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #49A6B7;">
+            <span>Rezultat 02</span><span style="color: rgba(178,219,213,0.5);">/</span><span style="color: rgba(245,239,224,0.75);">Telo</span>
+          </div>
+          <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(20px, 1.9vw, 25px); line-height: 1.2; color: #F5EFE0;">Strije i tonus kože stomaka</h3>
+        </div>
+
+        <div data-reveal="1" class="sb-result" style="border: 1px solid rgba(178,219,213,0.22); padding: clamp(12px, 1.2vw, 16px);">
+          <div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #12494F;">
+            <img src="assets/img/04-rezultat-oko-pre-posle.webp" alt="Pre i posle: predeo oko oka sa finim linijama i opuštenim gornjim kapkom, nakon tretmana koža je zategnutija i sjajnija" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <span style="position: absolute; left: 10px; top: 10px; padding: 4px 9px; background: rgba(12,73,79,0.72); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #F5EFE0;">Pre</span>
+            <span style="position: absolute; right: 10px; top: 10px; padding: 4px 9px; background: rgba(12,73,79,0.72); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #F5EFE0;">Posle</span>
+            <span style="position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(245,239,224,0.35);"></span>
+          </div>
+          <div style="display: flex; gap: 8px; margin: 16px 0 10px; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #49A6B7;">
+            <span>Rezultat 03</span><span style="color: rgba(178,219,213,0.5);">/</span><span style="color: rgba(245,239,224,0.75);">Predeo oko očiju</span>
+          </div>
+          <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(20px, 1.9vw, 25px); line-height: 1.2; color: #F5EFE0;">Fine linije i opuštenost oko očiju</h3>
+        </div>
+      </div>
+
+      <p data-reveal="1" style="margin: clamp(26px, 3vw, 38px) 0 0; max-width: 68ch; font-size: 14px; line-height: 1.7; color: rgba(245,239,224,0.75);">Rezultati su individualni i zavise od početnog stanja kože, kontinuiteta tretmana i kućne nege.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════ 08 / ISKUSTVA KLIJENATA — samo doslovne recenzije ═══════════ -->
+  <section id="iskustva" style="position: relative; z-index: 1; scroll-margin-top: 140px; background: #B2DBD5; color: #0F3F44;">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(70px, 9vw, 136px) clamp(20px, 4vw, 72px);">
+      <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(15,63,68,0.9); padding-bottom: 20px; border-bottom: 1px solid rgba(15,63,68,0.25);">08 / Iskustva klijenata</div>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(28px, 4vw, 64px); margin-top: clamp(32px, 4vw, 56px);">
+        <div class="sb-fluid" style="flex: 1 1 400px; min-width: 280px;">
+          <h2 data-reveal="1" style="margin: 0; max-width: 18ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.8vw, 56px); line-height: 1.06; letter-spacing: -0.024em; text-wrap: pretty;">Preporuka je najlepši oblik <span style="font-style: italic;">poverenja</span>.</h2>
+          <div data-reveal="1" class="sb-80" style="display: flex; align-items: flex-end; gap: clamp(14px, 2vw, 28px); margin-top: clamp(28px, 3.4vw, 46px); padding-top: clamp(20px, 2.4vw, 30px); border-top: 1px solid rgba(15,63,68,0.25);">
+            <span style="font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(80px, 10.5vw, 160px); line-height: 0.76; letter-spacing: -0.05em; color: #0F3F44;">80%</span>
+            <p style="max-width: 22ch; margin: 0 0 8px; font-size: 15px; line-height: 1.7; color: rgba(15,63,68,0.86);">novih klijenata od 2014. godine došlo je preko preporuke.</p>
+          </div>
+        </div>
+
+        <div class="sb-fluid" style="flex: 1 1 460px; min-width: 290px;">
+          <blockquote data-reveal="1" style="margin: 0; padding: clamp(24px, 3vw, 38px); border: 1px solid rgba(15,63,68,0.25); background: #F5EFE0;">
+            <p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(19px, 2vw, 26px); line-height: 1.42; color: #0F3F44;">„Ženja je profesionalan i kvalitetan kozmetičar i baš prijatna osoba što je meni veoma važno. Da znam da se osećam kao kod kuće, a da imaju profesionalan pristup. Kome god sam preporučila, svi se vraćaju kod nje.”</p>
+            <footer style="margin-top: 22px; padding-top: 16px; border-top: 1px solid rgba(15,63,68,0.2); display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(15,63,68,0.8);"><span style="color: #0F3F44; font-weight: 500;">Slađana Mikić</span><span>Google recenzija</span></footer>
+          </blockquote>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; margin-top: 1px; background: rgba(15,63,68,0.25);">
+            <blockquote data-reveal="1" style="margin: 0; padding: clamp(20px, 2.4vw, 28px); background: #E2E8E4;">
+              <p style="margin: 0; font-size: 15px; line-height: 1.75; color: rgba(15,63,68,0.9);">„5 godina posećujem salon i mislim da nema tretmana lica i tela koji nisam radila. Profesionalnost, ambijent, ljubaznost i Ženja nemaju konkurenciju!”</p>
+              <footer style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #0F3F44;"><span>Smiljana Živolić</span><span style="font-weight: 400; color: rgba(15,63,68,0.75);">Google recenzija</span></footer>
+            </blockquote>
+            <blockquote data-reveal="1" style="margin: 0; padding: clamp(20px, 2.4vw, 28px); background: #E2E8E4;">
+              <p style="margin: 0; font-size: 15px; line-height: 1.75; color: rgba(15,63,68,0.9);">„Prezadovoljna sam kako salonom tako i uslugom. Osoblje je vrlo ljubazno, profesionalno, sve ide po rasporedu i kako je napisano na sajtu. Sigurno ću doći ponovo.”</p>
+              <footer style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #0F3F44;"><span>Nevena Kovačević</span><span style="font-weight: 400; color: rgba(15,63,68,0.75);">Google recenzija</span></footer>
+            </blockquote>
+          </div>
+          <!-- LINK ZA POVEZIVANJE: stvarni Google profil salona -->
+          <a data-reveal="1" href="#iskustva" class="sb-inline-link" style="display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #0F3F44; border-bottom: 1px solid rgba(15,63,68,0.4); padding-bottom: 8px;" style-hover="color: #12494F;">Sve recenzije <span aria-hidden="true" style="font-size: 13px;">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 09 / EDUKACIJA (sekundarni poslovni pravac) ═══════════ -->
+  <section id="edukacija" style="position: relative; z-index: 1; scroll-margin-top: 140px; background: #0F3F44; border-bottom: 1px solid rgba(178,219,213,0.18);">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(54px, 6.6vw, 90px) clamp(20px, 4vw, 72px); display: flex; flex-wrap: wrap; gap: clamp(26px, 3.6vw, 60px); align-items: flex-start;">
+      <div class="sb-fluid" data-reveal="1" style="flex: 0 1 230px; min-width: 190px;">
+        <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7;">09 / Edukacija</div>
+        <div style="width: 34px; height: 1px; background: #49A6B7; margin-top: 14px;"></div>
+      </div>
+      <div class="sb-fluid" style="flex: 1 1 400px; min-width: 270px;">
+        <h2 data-reveal="1" class="sb-h2-sm" style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(26px, 2.9vw, 40px); line-height: 1.12; letter-spacing: -0.02em; color: #F5EFE0;">Znanje koje postaje profesija.</h2>
+        <p data-reveal="1" style="max-width: 56ch; margin: 18px 0 0; font-size: 16px; line-height: 1.8; color: rgba(245,239,224,0.84); text-wrap: pretty;">SOŽE BEAUTY ima status javno priznatog organizatora aktivnosti obrazovanja odraslih (JPOA). Obuke su namenjene budućim i aktivnim kozmetičarima — to je odvojen put od zakazivanja tretmana u salonu.</p>
+      </div>
+      <!-- LINK ZA POVEZIVANJE: zasebna stranica ili sajt edukacije -->
+      <a data-reveal="1" href="https://kozmeticar.com/" target="_blank" rel="noopener noreferrer" class="sb-edu-cta" style="flex: 0 1 250px; display: inline-flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #B2DBD5; border: 1px solid rgba(178,219,213,0.5); padding: 16px 20px; transition: background 350ms ease, color 350ms ease;" style-hover="background: #B2DBD5; color: #0F3F44;">Program edukacije <span aria-hidden="true" style="font-size: 13px;">↗</span></a>
+    </div>
+  </section>
+
+  <!-- ═══════════ 10 / SOŽE SVET ═══════════ -->
+  <section id="soze-svet" style="position: relative; z-index: 1; scroll-margin-top: 140px; background: #E2E8E4; color: #0F3F44;">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(66px, 8.6vw, 128px) clamp(20px, 4vw, 72px);">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: clamp(28px, 3.4vw, 46px); border-bottom: 1px solid rgba(15,63,68,0.25);">
+        <div>
+          <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(15,63,68,0.9); margin-bottom: clamp(18px, 2.4vw, 30px);">10 / SOŽE svet</div>
+          <h2 data-reveal="1" style="margin: 0; max-width: 22ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 52px); line-height: 1.08; letter-spacing: -0.022em; text-wrap: pretty;">Nega se ne završava izlaskom iz <span style="font-style: italic; color: #2E7F8C;">salona</span>.</h2>
+        </div>
+        <p data-reveal="1" style="max-width: 32ch; margin: 0; font-size: 16px; line-height: 1.8; color: rgba(15,63,68,0.82);">Projekti koji su nastali oko SOŽE BEAUTY. Svaki živi na svojoj adresi i otvara se kao odvojeno odredište.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1px; margin-top: clamp(30px, 3.6vw, 48px); background: rgba(15,63,68,0.25);">
+        <sc-for list="{{ world }}" as="w" hint-placeholder-count="3">
+          <a data-reveal="1" href="{{ w.href }}" target="_blank" rel="noopener noreferrer" style="background: #F5EFE0; padding: clamp(24px, 2.8vw, 34px); color: #0F3F44; display: flex; flex-direction: column; gap: 12px; transition: background 400ms ease;" style-hover="background: #FFFFFF;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #2E7F8C;">
+              <span>{{ w.kind }}</span><span aria-hidden="true" style="font-size: 13px;">↗</span>
+            </div>
+            <h3 class="sb-world-title" style="margin: 6px 0 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.16; letter-spacing: -0.02em; min-height: 2.32em;">{{ w.title }}</h3>
+            <p class="sb-world-text" style="margin: 0; max-width: 36ch; min-height: 5.1em; font-size: 15px; line-height: 1.7; color: rgba(15,63,68,0.82);">{{ w.text }}</p>
+            <span style="margin-top: auto; padding-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(15,63,68,0.75);"><span>{{ w.domain }}</span></span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 11 / ZAKAZIVANJE, KONTAKT I FOOTER ═══════════ -->
+  <section id="kontakt" style="position: relative; z-index: 1; scroll-margin-top: 140px; background: #0F3F44; border-top: 1px solid rgba(178,219,213,0.18);">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(74px, 10vw, 148px) clamp(20px, 4vw, 72px) clamp(40px, 5vw, 60px);">
+      <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; padding-bottom: 20px; margin-bottom: clamp(32px, 4vw, 56px); border-bottom: 1px solid rgba(178,219,213,0.18);">11 / Zakazivanje i kontakt</div>
+      <div style="display: flex; flex-wrap: wrap; gap: clamp(30px, 4.6vw, 80px); align-items: flex-start;">
+        <div class="sb-fluid" style="flex: 1 1 480px; min-width: 290px;">
+          <h2 data-reveal="1" style="margin: 0; max-width: 20ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.8vw, 72px); line-height: 1.03; letter-spacing: -0.03em; color: #F5EFE0; text-wrap: pretty;">Ne morate sami da procenjujete šta je potrebno <span style="font-style: italic; color: #B2DBD5;">vašoj koži</span>.</h2>
+          <p data-reveal="1" style="max-width: 46ch; margin: clamp(22px, 2.8vw, 36px) 0 0; font-size: 17px; line-height: 1.8; color: rgba(245,239,224,0.86); text-wrap: pretty;">Upoznajmo se pre prvog tretmana. Zakažite online dijagnostiku ili nas pozovite.</p>
+          <div data-reveal="1" class="sb-cta-row" style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(26px, 3.2vw, 42px);">
+            <a href="#kontakt-forma" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; background: #49A6B7; color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 19px 30px; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Zakažite dijagnostiku <span style="font-size: 14px;">→</span></a>
+            <a href="tel:+381658887693" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; border: 1px solid rgba(178,219,213,0.5); color: #F5EFE0; font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; padding: 19px 30px; transition: border-color 350ms ease, background 350ms ease;" style-hover="border-color: #B2DBD5; background: rgba(178,219,213,0.08);">Pozovite: +381 65 8887 693</a>
+          </div>
+
+          <div data-reveal="1" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1px; margin-top: clamp(30px, 3.6vw, 48px); background: rgba(178,219,213,0.18);">
+            <div style="background: #0F3F44; padding: 20px 16px 20px 0;">
+              <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7; margin-bottom: 10px;">Adresa</div>
+              <div style="font-size: 16px; line-height: 1.6; color: rgba(245,239,224,0.9);">Aranj Janoša 9<br />21000 Novi Sad</div>
+            </div>
+            <div style="background: #0F3F44; padding: 20px 16px;">
+              <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7; margin-bottom: 10px;">Radno vreme</div>
+              <div style="font-size: 16px; line-height: 1.6; color: rgba(245,239,224,0.9);">Ponedeljak – petak<br />10:00 – 20:00</div>
+            </div>
+            <div style="background: #0F3F44; padding: 20px 16px;">
+              <div style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7; margin-bottom: 10px;">Lokacija</div>
+              <a href="https://www.google.com/maps?cid=9173733897705992512&hl=sr" target="_blank" rel="noopener" aria-label="Otvorite lokaciju salona SOŽE BEAUTY na Google mapama" style="display: block; position: relative; height: 78px; border: 1px solid rgba(178,219,213,0.3); overflow: hidden;">
+                <span aria-hidden="true" style="position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(178,219,213,0.14) 0 1px, transparent 1px 16px), repeating-linear-gradient(0deg, rgba(178,219,213,0.14) 0 1px, transparent 1px 16px);"></span>
+                <span aria-hidden="true" style="position: absolute; left: 42%; top: 44%; width: 8px; height: 8px; background: #49A6B7;"></span>
+                <span style="position: absolute; left: 8px; bottom: 6px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.85);">Otvorite mapu ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demo forma: povezivanje sa stvarnim sistemom radi developer -->
+        <form class="sb-fluid" id="kontakt-forma" data-reveal="1" onSubmit="{{ submit }}" style="flex: 1 1 340px; min-width: 270px; scroll-margin-top: 140px; border: 1px solid rgba(178,219,213,0.22); padding: clamp(22px, 2.8vw, 34px); background: rgba(178,219,213,0.05);">
+          <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7;">Zahtev za dijagnostiku</div>
+          <h3 style="margin: 14px 0 22px; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.2; color: #F5EFE0;">Recite nam šta primećujete</h3>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <label for="f-ime" style="display: flex; flex-direction: column; gap: 8px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.8);">Ime i prezime
+              <input id="f-ime" type="text" name="ime" required="required" autoComplete="name" style="background: transparent; border: 1px solid rgba(178,219,213,0.35); color: #F5EFE0; font-size: 16px; letter-spacing: 0; text-transform: none; padding: 14px;" />
+            </label>
+            <label for="f-kontakt" style="display: flex; flex-direction: column; gap: 8px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.8);">Telefon ili e-mail
+              <input id="f-kontakt" type="text" name="kontakt" required="required" style="background: transparent; border: 1px solid rgba(178,219,213,0.35); color: #F5EFE0; font-size: 16px; letter-spacing: 0; text-transform: none; padding: 14px;" />
+            </label>
+            <label for="f-opis" style="display: flex; flex-direction: column; gap: 8px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.8);">Šta primećujete na svojoj koži?
+              <textarea id="f-opis" name="opis" rows="3" style="background: transparent; border: 1px solid rgba(178,219,213,0.35); color: #F5EFE0; font-size: 16px; letter-spacing: 0; text-transform: none; padding: 14px; resize: vertical;"></textarea>
+            </label>
+            <label for="f-consent" class="sb-consent" style="display: flex; align-items: flex-start; gap: 12px; font-size: 13px; line-height: 1.6; color: rgba(245,239,224,0.82);">
+              <input id="f-consent" type="checkbox" name="consent" required="required" style="flex: 0 0 auto; width: 20px; height: 20px; margin: 2px 0 0; accent-color: #49A6B7;" />
+              <span>Saglasna/saglasan sam da SOŽE BEAUTY kontaktira mene u vezi sa ovim zahtevom. <!-- LINK ZA POVEZIVANJE: stranica politike privatnosti --><a href="#kontakt" style="color: #B2DBD5; border-bottom: 1px solid rgba(178,219,213,0.5);">Politika privatnosti</a></span>
+            </label>
+            <button type="submit" class="sb-submit" style="min-height: 48px; background: #49A6B7; border: none; color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 24px; cursor: pointer; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Pošaljite zahtev →</button>
+            <p style="margin: 0; font-size: 13px; line-height: 1.6; color: rgba(245,239,224,0.72);">Nakon slanja javljamo se radnim danima od 10 do 20 časova i predlažemo termin dijagnostike.</p>
+            <p ref="{{ formMsg }}" role="status" aria-live="polite" style="margin: 0; min-height: 20px; font-size: 13px; line-height: 1.5; color: #B2DBD5;"></p>
+            <p style="margin: 0; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.6);">Demo forma u konceptu — nije povezana sa sistemom</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div style="border-top: 1px solid rgba(178,219,213,0.18);">
+      <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(38px, 5vw, 64px) clamp(20px, 4vw, 72px);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: clamp(26px, 3vw, 44px);">
+          <div>
+            <img src="assets/img/soze-beauty-bela-2x.png" alt="SOŽE BEAUTY" width="2000" height="1128" loading="lazy" style="display: block; height: 46px; width: auto; margin-bottom: 18px;" />
+            <div class="sb-faddr" style="font-size: 15px; line-height: 1.7; color: rgba(245,239,224,0.8);">Aranj Janoša 9, Novi Sad<br /><a href="tel:+381658887693" style="color: rgba(245,239,224,0.8);" style-hover="color: #B2DBD5;">+381 65 8887 693</a><br />Ponedeljak – petak, 10:00 – 20:00</div>
+          </div>
+          <div>
+            <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7; margin-bottom: 16px;">Nega</div>
+            <div class="sb-fcol" style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; letter-spacing: 0.04em;">
+              <a href="#tretmani" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Tretmani</a>
+              <a href="#cenovnik" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Cenovnik</a>
+              <a href="#potrebe" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Potrebe kože</a>
+              <a href="#dijagnostika" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Online dijagnostika</a>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7; margin-bottom: 16px;">Brend</div>
+            <div class="sb-fcol" style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; letter-spacing: 0.04em;">
+              <a href="#o-nama" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">O nama</a>
+              <a href="#rezultati" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Rezultati</a>
+              <a href="#iskustva" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Iskustva</a>
+              <a href="#edukacija" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Edukacija</a>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7; margin-bottom: 16px;">SOŽE svet</div>
+            <div class="sb-fcol" style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; letter-spacing: 0.04em;">
+              <a href="https://presveganega.com/" target="_blank" rel="noopener noreferrer" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Pre svega nega ↗</a>
+              <a href="https://www.youtube.com/@pre_svega_nega" target="_blank" rel="noopener noreferrer" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">YouTube ↗</a>
+              <a href="https://kozmeticar.com/" target="_blank" rel="noopener noreferrer" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Kozmetičar.com ↗</a>
+              <a href="https://www.instagram.com/sozebeauty/" target="_blank" rel="noopener noreferrer" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Instagram ↗</a>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7; margin-bottom: 16px;">Kontakt</div>
+            <div class="sb-fcol" style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; letter-spacing: 0.04em;">
+              <a href="#kontakt-forma" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Zakazivanje</a>
+              <a href="tel:+381658887693" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Telefon</a>
+              <a href="#kontakt" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Politika privatnosti</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top: 1px solid rgba(178,219,213,0.18);">
+        <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: 18px clamp(20px, 4vw, 72px); display: flex; flex-wrap: wrap; gap: 10px 22px; justify-content: space-between; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.62);">
+          <span>© 2014.–2026. SOŽE BEAUTY · Novi Sad</span>
+          <span>Koncept redizajna · Nega počinje razumevanjem</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;gridLines&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Kompozicija&quot;},&quot;tickerSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:52,&quot;min&quot;:25,&quot;max&quot;:90,&quot;step&quot;:2,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Kretanje&quot;}}">
+class Component extends DCLogic {
+  state = { menuOpen: false, priceCat: 0, openCat: 0, carIdx: 0 };
+
+  // ══ SADRŽAJ ══ CENOVNIK — jedino mesto za izmenu cena i naziva.
+  // Struktura: { name, price, duration, note }. Cene su preuzete iz zvaničnog
+  // SOŽE cenovnika; valuta nije iskazana u izvoru pa nije dodavana.
+  priceCategories = [
+    { id: 'lice', name: 'Tretmani lica', items: [
+      { name: 'Higijenski tretman lica', price: '6.000,00' },
+      { name: 'Higijenski tretman lica + hidratacijom za osetljivu kožu', price: '8.500,00' },
+      { name: 'Medicinski tretman', price: '5.000,00' },
+      { name: 'Čišćenje lica ultazvučnom špatulom', price: '5.000,00' },
+      { name: 'Tretman lica dijamantskom mikrodermoabrazijom', price: '5.000,00' },
+      { name: 'Čišćenje lica + hidratacija lica', price: '7.000,00' },
+      { name: 'Tretman lica kombinacija', price: '6.500,00', note: 'ultrazvučna špatula i mikrodermoabrazija' },
+      { name: 'Tretman za osetljivu kožu', price: '7.000,00' },
+      { name: 'Dermo Oxy', price: '6.500,00', note: 'tretman kiseonikom' },
+      { name: 'Pure Oxy tretman', price: '6.500,00', note: 'tretman kiseonikom' },
+      { name: 'Vitaminski tretman', price: '7.000,00' },
+      { name: 'Lifting tretman elektrostimulativnim rukavicama', price: '7.000,00' },
+      { name: 'Mezoterapija bez igle', price: '6.000,00' },
+      { name: 'Masaža lica', price: '3.000,00' },
+      { name: 'Polutretman lica', price: '3.700,00', note: 'umivanje, piling i masaža lica' },
+      { name: 'Tretman hidratacije', price: '7.000,00' },
+      { name: 'Hemijski piling', price: '7.500,00', note: '4 tretmana = 26.000 · 6 tretmana = 36.500' },
+      { name: 'Hemijski piling + biorevitalizacija', price: '10.000,00' },
+      { name: 'Personalizovani tretman podmlađivanje', price: '15.000,00' },
+      { name: 'Salicilna kiselina — piling', price: '7.500,00' },
+      { name: 'Mandelična kiselina — piling', price: '7.500,00' },
+      { name: 'Voćne kiseline', price: '7.500,00', note: '4 tretmana = 26.000 · 6 tretmana = 36.500' },
+      { name: 'Luksuzni tretman nege', price: '11.000,00' },
+      { name: 'Radiotalasni lifting lica', price: '6.000,00', note: '4 tretmana = 20.000 · 6 tretmana = 29.000' },
+      { name: 'Radiotalasni lifting lica, vrata i dekoltea', price: '6.500,00', note: '4 tretmana = 22.000 · 6 tretmana = 30.000' },
+      { name: 'Line Correction', price: '8.500,00' },
+      { name: 'Genskin tretman', price: '7.500,00' },
+      { name: 'Perfection tretman', price: '7.500,00' },
+      { name: 'Bloomea LA FONTAINE', price: '11.000,00', note: '4 tretmana = 32.000 · 6 tretmana = 45.000' },
+      { name: 'Neoderma tretmani', price: '12.000,00' },
+      { name: 'Dijagnostika lica', price: '3.500,00' },
+      { name: 'Konsultacije', price: '2.000,00' }
+    ] },
+    { id: 'personalizovani', name: 'Personalizovani tretman', items: [
+      { name: 'Ženjin ritual', price: '20.000,00' }
+    ] },
+    { id: 'bloomea', name: 'Bloomea Neocare Advanced', items: [
+      { name: 'Tretman lica', price: '15.000,00', note: '4 tretmana = 52.000 · 6 tretmana = 65.000' },
+      { name: 'Tretman tela', price: '9.000,00', note: '4 tretmana = 32.000 · 6 tretmana = 48.000' }
+    ] },
+    { id: 'led', name: 'LED terapija — Dermalux Flex MD', items: [
+      { name: 'Tretman lica', price: '3.500,00', note: '3 tretmana = 7.500 · 5 tretmana = 10.000' },
+      { name: 'Tretman tela', price: '3.500,00', note: '3 tretmana = 7.500 · 5 tretmana = 10.000' },
+      { name: 'Dodatak', price: '1.000,00', note: 'ukoliko se LED lampa radi uz tretman lica, naplaćuje se 1.000,00 dinara na cenu tretmana lica' }
+    ] },
+    { id: 'miolift', name: 'Miolift', items: [
+      { name: 'Miolift tretman', price: '7.500,00', note: '4 tretmana = 24.000 · 6 tretmana = 34.000' }
+    ] },
+    { id: 'laser', name: 'Laserska epilacija — diodni laser', items: [
+      { name: 'Celo telo + celo lice — 1 tretman', price: '21.500,00', note: 'maksimalno 6 tretmana = 115.000,00' },
+      { name: 'Celo telo — 1 tretman', price: '20.000,00', note: 'maksimalno 6 tretmana = 107.000,00' },
+      { name: 'Cele noge + bikini — 1 tretman', price: '18.000,00', note: 'maksimalno 6 tretmana = 93.000,00' },
+      { name: 'Cele noge + prepone — 1 tretman', price: '17.000,00', note: 'maksimalno 6 tretmana = 89.000,00' },
+      { name: 'Cele noge — 1 tretman', price: '15.000,00', note: 'maksimalno 6 tretmana = 83.000,00' },
+      { name: 'Pola nogu — 1 tretman', price: '10.000,00', note: 'maksimalno 6 tretmana = 49.000,00' },
+      { name: 'Prepone — 1 tretman', price: '7.500,00', note: 'maksimalno 6 tretmana = 32.000,00' },
+      { name: 'Bikini — 1 tretman', price: '8.500,00', note: 'maksimalno 6 tretmana = 38.000,00' },
+      { name: 'Stomak — 1 tretman', price: '7.000,00', note: 'maksimalno 6 tretmana = 35.000,00' },
+      { name: 'Pazuh — 1 tretman', price: '7.000,00', note: 'maksimalno 6 tretmana = 35.000,00' },
+      { name: 'Ruke — 1 tretman', price: '8.500,00', note: 'maksimalno 6 tretmana = 40.000,00' },
+      { name: 'Celo lice — 1 tretman', price: '5.000,00', note: 'maksimalno 6 tretmana = 23.000,00' },
+      { name: 'Nausnice — 1 tretman', price: '3.000,00', note: 'maksimalno 6 tretmana = 15.000,00' },
+      { name: 'Nausnice i brada — 1 tretman', price: '4.000,00', note: 'maksimalno 6 tretmana = 19.000,00' }
+    ] },
+    { id: 'elektroliza', name: 'Elektroliza dlaka', items: [
+      { name: '1 minut', price: '150,00', note: 'naplaćivanje minimalno 5 minuta' }
+    ] },
+    { id: 'telo', name: 'Tretmani tela', items: [
+      { name: 'Tretman gipsanim bermudama', price: '4.300,00' },
+      { name: 'Ultracontour Touch', price: '3.600,00', note: 'po jednoj strani' },
+      { name: 'Ultracontour Touch', price: '5.300,00', note: 'obe strane' },
+      { name: 'Radiotalasni lifting', price: '4.500,00', note: 'po regiji' },
+      { name: 'Presoterapija 30′', price: '3.800,00', note: 'po regiji' }
+    ] },
+    { id: 'masaze', name: 'Masaže', items: [
+      { name: 'Relax masaža 60′', price: '3.700,00' },
+      { name: 'Relax masaža 30′', price: '2.500,00' },
+      { name: 'Terapeutska masaža 30′', price: '2.800,00' },
+      { name: 'Sportska masaža 60′', price: '6.000,00' },
+      { name: 'Anti stres masaža 60′', price: '4.300,00' },
+      { name: 'Anticelulit masaža — vakuum', price: '2.300,00' },
+      { name: 'Anticelulit masaža 30′', price: '2.000,00' },
+      { name: 'Refleksologija stopala 45′', price: '2.500,00' }
+    ] },
+    { id: 'paketi', name: 'Paketi', items: [
+      { name: 'Paket od 5 anticelulit masaža sa limfnom drenažom', price: '10.000,00', note: '+ vakuumska drenaža' },
+      { name: 'Paket od 10 anticelulit masaža sa limfnom drenažom', price: '20.000,00', note: '+ vakuumska drenaža' },
+      { name: 'Paket od 5 anticelulit masaža sa limfnom drenažom od 30′', price: '8.500,00' },
+      { name: 'Paket od 10 anticelulit masaža sa limfnom drenažom od 30′', price: '17.500,00' },
+      { name: 'Paket od 3 tretmana gipsanim bermudama', price: '11.700,00' },
+      { name: 'Paket od 5 tretmana gipsanim bermudama', price: '19.000,00' },
+      { name: '5x Contour Touch', price: '16.000,00', note: 'po jednoj strani tela' },
+      { name: '10x Contour Touch', price: '33.500,00', note: 'po jednoj strani tela' },
+      { name: '5x Contour Touch', price: '24.000,00' },
+      { name: '10x Contour Touch', price: '50.000,00' }
+    ] },
+    { id: 'oblikovano', name: 'Oblikovano i zategnuto telo', items: [
+      { name: '5x Contour Touch + 3x gipsane bermude + 5x anticelulit masaža', price: '33.000,00' }
+    ] },
+    { id: 'celulit', name: 'Paketi za celulit', items: [
+      { name: '2 tretmana gipsanim bermudama + 5 anticelulit masaža', price: '16.000,00' },
+      { name: '3 tretmana gipsanim bermudama + 10 anticelulit masaža', price: '26.500,00' }
+    ] },
+    { id: 'tonus', name: 'Paket za zatezanje kože i vraćanje tonusa', items: [
+      { name: '5 Contour Touch + 3 radiotalasna liftinga', price: '35.000,00' }
+    ] },
+    { id: 'masne-naslage', name: 'Paket za topljenje masnih naslaga', items: [
+      { name: '3 tretmana gipsanim bermudama + 5 anticelulit masaža (vakuum)', price: '23.500,00' },
+      { name: '1 tretman tela + 3 tretmana gipsanim bermudama + 5 anticelulit masaža', price: '28.000,00' },
+      { name: '4 radiotalasna liftinga + 2 tretmana tela', price: '27.000,00' }
+    ] }
+  ];
+
+  constructor(props) {
+    super(props);
+    ['headerRef','tickerRef','carRef','rowsRef','previewRef','previewLabel','previewImg','founderImg','pristupImg','heroImg','founderPhoto','pristupPhoto','vLabel','burstRef','burgerRef','utilAddr','utilHours','gridRef','formMsg','priceDesktop','priceMobile','swipeHint']
+      .forEach((k) => { this[k] = React.createRef(); });
+    this.navLinks = Array.from({ length: 5 }, () => React.createRef());
+  }
+
+  componentDidMount() {
+    const dur = this.props.tickerSeconds ?? 52;
+    if (this.tickerRef.current) this.tickerRef.current.style.animationDuration = dur + 's';
+
+    this.applyWidth();
+    this.onResize = () => this.applyWidth();
+    window.addEventListener('resize', this.onResize);
+
+    this.onKey = (e) => {
+      if (e.key !== 'Escape' || !this.state.menuOpen) return;
+      this.setMenu(false);
+      if (this.burgerRef.current) this.burgerRef.current.focus();
+    };
+    window.addEventListener('keydown', this.onKey);
+
+    if (this.carRef.current) {
+      this.onCarScroll = () => {
+        if (this.carRaf) return;
+        this.carRaf = requestAnimationFrame(() => {
+          this.carRaf = null;
+          const el = this.carRef.current;
+          if (!el) return;
+          const kids = Array.from(el.children);
+          let best = 0, bestD = Infinity;
+          kids.forEach((k, i) => {
+            const d = Math.abs(k.offsetLeft - el.scrollLeft);
+            if (d < bestD) { bestD = d; best = i; }
+          });
+          if (best !== this.state.carIdx) this.setState({ carIdx: best });
+        });
+      };
+      this.carRef.current.addEventListener('scroll', this.onCarScroll, { passive: true });
+      this.onCarSettle = () => {
+        if (this.carRaf) { cancelAnimationFrame(this.carRaf); this.carRaf = null; }
+        const idx = this.nearestCard();
+        if (idx !== this.state.carIdx) this.setState({ carIdx: idx });
+      };
+      this.carRef.current.addEventListener('scrollend', this.onCarSettle);
+    }
+
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const hdr = this.headerRef.current;
+    const par = (ref, amt) => {
+      const el = ref.current;
+      if (!el || reduce || !this.wide || !this.finePointer) return;
+      const r = el.getBoundingClientRect();
+      const p = (r.top + r.height / 2 - window.innerHeight / 2) / window.innerHeight;
+      el.style.transform = 'translateY(' + (-p * amt).toFixed(2) + 'px)';
+    };
+
+    this.watched = new Set();
+    this.revealEl = (el) => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      this.watched.delete(el);
+      if (this.io) this.io.unobserve(el);
+    };
+    this.sweep = () => {
+      this.watched.forEach((el) => {
+        if (el.getBoundingClientRect().top < window.innerHeight * 0.94) this.revealEl(el);
+      });
+    };
+
+    this.onScroll = () => {
+      const y = window.scrollY || 0;
+      if (hdr) {
+        const solid = y > 60;
+        hdr.style.background = solid ? 'rgba(15,63,68,0.96)' : 'transparent';
+        hdr.style.backdropFilter = solid ? 'saturate(140%) blur(10px)' : 'none';
+        hdr.style.borderBottomColor = solid ? 'rgba(178,219,213,0.2)' : 'rgba(178,219,213,0)';
+      }
+      par(this.founderImg, 22);
+      par(this.pristupImg, 16);
+      if (this.sweep) this.sweep();
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onScroll();
+
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) this.revealEl(e.target); });
+      this.sweep();
+    }, { threshold: 0, rootMargin: '0px 0px -6% 0px' });
+    this.onHash = () => setTimeout(() => this.watched.forEach((el) => this.revealEl(el)), 60);
+    window.addEventListener('hashchange', this.onHash);
+
+    if (!reduce) {
+      requestAnimationFrame(() => {
+        document.querySelectorAll('[data-reveal]').forEach((el, i) => {
+          if (el.getBoundingClientRect().top > window.innerHeight * 0.92) {
+            const d = (i % 3) * 70;
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(22px)';
+            el.style.transition = 'opacity 900ms cubic-bezier(0.22,0.61,0.36,1) ' + d + 'ms, transform 1000ms cubic-bezier(0.22,0.61,0.36,1) ' + d + 'ms';
+            this.watched.add(el);
+            this.io.observe(el);
+          }
+        });
+        this.sweep();
+      });
+    }
+  }
+
+  // Raspored kontroliše CSS (media queries u helmetu). JS samo prati da li je
+  // desktop nivo aktivan — zbog hover preview-a i parallaxa.
+  applyWidth() {
+    this.wide = window.matchMedia('(min-width: 1180px)').matches;
+    this.finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (this.wide) this.setMenu(false);
+  }
+
+  setMenu(open) {
+    if (!!this.state.menuOpen === open) return;
+    this.setState({ menuOpen: open });
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (this.burstRef.current) this.burstRef.current.textContent = open ? '✕' : '☰';
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('hashchange', this.onHash);
+    window.removeEventListener('keydown', this.onKey);
+    document.body.style.overflow = '';
+    if (this.carRef.current && this.onCarScroll) {
+      this.carRef.current.removeEventListener('scroll', this.onCarScroll);
+      this.carRef.current.removeEventListener('scrollend', this.onCarSettle);
+    }
+    if (this.io) this.io.disconnect();
+  }
+
+  goCard(i) {
+    const el = this.carRef.current;
+    if (!el) return;
+    const kids = Array.from(el.children);
+    const max = el.scrollWidth - el.clientWidth;
+    const idx = Math.max(0, Math.min(i, kids.length - 1));
+    el.scrollTo({ left: Math.max(0, Math.min(kids[idx].offsetLeft, max)), behavior: 'smooth' });
+    if (idx !== this.state.carIdx) this.setState({ carIdx: idx });
+  }
+
+  nearestCard() {
+    const el = this.carRef.current;
+    if (!el) return 0;
+    let best = 0, bestD = Infinity;
+    Array.from(el.children).forEach((k, i) => {
+      const d = Math.abs(k.offsetLeft - el.scrollLeft);
+      if (d < bestD) { bestD = d; best = i; }
+    });
+    return best;
+  }
+
+  scrollCar(dir) {
+    this.goCard(this.nearestCard() + dir);
+  }
+
+  showPreview(label, el, img) {
+    if (!this.wide || !this.finePointer) return;
+    if (img && this.previewImg.current && this.previewImg.current.getAttribute('src') !== img) {
+      this.previewImg.current.setAttribute('src', img);
+    }
+    const p = this.previewRef.current;
+    const rows = this.rowsRef.current;
+    if (!p || !rows || !el) return;
+    const r = el.getBoundingClientRect();
+    const b = rows.getBoundingClientRect();
+    const y = Math.max(0, Math.min(r.top - b.top + r.height / 2 - 145, b.height - 290));
+    p.style.transform = 'translateY(' + y.toFixed(0) + 'px)';
+    p.style.opacity = '1';
+    if (this.previewLabel.current) this.previewLabel.current.textContent = label;
+  }
+
+  hidePreview() {
+    if (this.previewRef.current) this.previewRef.current.style.opacity = '0';
+  }
+
+  onSubmit(e) {
+    e.preventDefault();
+    const f = e.currentTarget;
+    if (this.formMsg.current) {
+      const ime = ((f.elements.ime && f.elements.ime.value) || '').trim().split(' ')[0];
+      this.formMsg.current.textContent = (ime ? ime + ', h' : 'H') + 'vala — zahtev je zabeležen. Javljamo se radnim danima od 10 do 20 časova.';
+    }
+    f.reset();
+  }
+
+  renderVals() {
+    // ══ SADRŽAJ ══ Potrebe kože: kategorije prate stvarne grupe SOŽE usluga
+    // ZAMENA FOTOGRAFIJA: peti element = fotografija koja se prikazuje na hover/focus
+    const raw = [
+      ['01', 'Zapušena i nečista koža', 'Kada se koža zapuši, sjaji na pogrešnim mestima i teško se smiruje.', 'Tretmani lica', 'assets/img/tretmani-lica-2.jpg'],
+      ['02', 'Dehidrirana i osetljiva koža', 'Za kožu koja zateže, crveni se i reaguje na skoro sve.', 'Tretmani lica', 'assets/img/tretmani-lica-1.jpg'],
+      ['03', 'Neujednačen ten i tekstura', 'Postepen rad na tonu kože, tragovima i nepravilnostima.', 'Pilinzi i Bloomea Neocare', 'assets/img/bloomea-neocare-advanced.jpg'],
+      ['04', 'Izgubljena čvrstina i tonus', 'Rad na zategnutosti i konturi lica, korak po korak.', 'Radiotalasni lifting i Miolift', 'assets/img/miolift.jpg'],
+      ['05', 'Nega i oblikovanje tela', 'Tonus, cirkulacija i osećaj lakoće — nega koja se ne zaustavlja na licu.', 'Tretmani tela i masaže', 'assets/img/tretmani-tela-i-masaze.jpg'],
+      ['06', 'Neželjene dlačice', 'Uredno i predvidivo, uz negu kože pre i posle tretmana.', 'Laserska epilacija i elektroliza', 'assets/img/laserska-epilacija.jpg']
+    ];
+
+    const withNote = (items) => items.map((it) => ({ name: it.name, price: it.price, noteText: it.note || '' }));
+    const cats = this.priceCategories.map((c, i) => {
+      const active = this.state.priceCat === i;
+      const open = this.state.openCat === i;
+      return {
+        name: c.name,
+        items: withNote(c.items),
+        empty: c.items.length === 0,
+        count: c.items.length ? String(c.items.length) : '',
+        selected: active,
+        open: open,
+        sign: open ? '−' : '+',
+        bg: active ? 'rgba(178,219,213,0.1)' : 'transparent',
+        color: active ? '#B2DBD5' : 'rgba(245,239,224,0.82)',
+        countColor: active ? 'rgba(178,219,213,0.8)' : 'rgba(245,239,224,0.55)',
+        bar: active ? '#49A6B7' : 'transparent',
+        padLeft: active ? '16px' : '14px',
+        select: () => this.setState({ priceCat: i }),
+        toggle: () => this.setState({ openCat: open ? -1 : i })
+      };
+    });
+    const activeCat = this.priceCategories[this.state.priceCat] || this.priceCategories[0];
+
+    // ══ SADRŽAJ ══ Grupe tretmana = kategorije iz cenovnika. Trajanja nisu navedena
+    // jer nisu potvrđena. href → stranica konkretnog tretmana (developer povezuje).
+    const cards = [
+      { num: '01', cat: 'Lice', title: 'Tretmani lica', text: 'Od higijenskog tretmana i čišćenja do hidratacije, pilinga i radiotalasnog liftinga.', photo: 'Nanošenje maske tokom tretmana lica', img: 'assets/img/tretmani-lica-1-c24d3ff1.jpg', pos: 'center 40%', href: '#tretmani-lica' },
+      { num: '02', cat: 'Personalizovano', title: 'Ženjin ritual', text: 'Personalizovani tretman. Sadržaj rituala — sadržaj za potvrdu.', photo: 'Ženja Trbojević tokom tretmana lica u salonu', img: 'assets/img/zenjin-ritual.png', pos: 'center 25%', href: '#zenjin-ritual' },
+      { num: '03', cat: 'Lice i telo', title: 'Bloomea Neocare Advanced', text: 'Tretman lica i tretman tela. Protokol — sadržaj za potvrdu.', photo: 'Bloomea NeoCare Advanced uređaj', img: 'assets/img/bloomea-neocare-advanced-1c994708.jpg', pos: 'center center', href: '#bloomea-neocare' },
+      { num: '04', cat: 'Lice i telo', title: 'LED terapija — Dermalux Flex MD', text: 'Samostalno ili kao dodatak tretmanu lica.', photo: 'LED terapija Dermalux Flex MD na licu', img: 'assets/img/led-terapija.jpg', pos: 'center center', href: '#led-terapija' },
+      { num: '05', cat: 'Lice', title: 'Miolift', text: 'Tretman u serijama od 4 ili 6 tretmana. Opis — sadržaj za potvrdu.', photo: 'Miolift tretman lica elektrodama', img: 'assets/img/miolift-92d35932.jpg', pos: 'center 35%', href: '#miolift' },
+      { num: '06', cat: 'Epilacija', title: 'Laserska epilacija', text: 'Diodni laser, po regijama tela i lica, pojedinačno ili do 6 tretmana.', photo: 'Laserska epilacija nogu diodnim laserom', img: 'assets/img/laserska-epilacija-48abcb1d.jpg', pos: 'center 40%', href: '#laserska-epilacija' },
+      { num: '07', cat: 'Epilacija', title: 'Elektroliza dlaka', text: 'Obračun po minutu, minimalno 5 minuta.', photo: 'Elektroliza dlaka iglom', img: 'assets/img/elektroliza.jpg', pos: 'center center', href: '#elektroliza' },
+      { num: '08', cat: 'Telo', title: 'Tretmani tela', text: 'Gipsane bermude, Ultracontour Touch, radiotalasni lifting i presoterapija.', photo: 'Tretman tela gipsanim bermudama', img: 'assets/img/tretmani-tela.jpg', pos: 'center center', href: '#tretmani-tela' },
+      { num: '09', cat: 'Telo', title: 'Masaže', text: 'Relax, terapeutska, sportska, anti stres, anticelulit i refleksologija.', photo: 'Masaža leđa u salonu', img: 'assets/img/tretmani-tela-i-masaze-39d364b7.jpg', pos: 'center 45%', href: '#masaze' },
+      { num: '10', cat: 'Paketi', title: 'Paketi tretmana', text: 'Serije tretmana za celulit, tonus kože i oblikovanje tela.', photo: 'Tretman oblikovanja tela', img: 'assets/img/paketi.jpg', pos: 'center 45%', href: '#paketi' }
+    ];
+
+    return {
+      gridLines: this.props.gridLines ?? true,
+      needs: raw.map((r) => ({
+        num: r[0], title: r[1], text: r[2], tag: r[3],
+        enter: (e) => this.showPreview(r[3], e.currentTarget, r[4]),
+        leave: () => this.hidePreview()
+      })),
+      previewImg: this.previewImg,
+      // ══ SADRŽAJ ZA POTVRDU ══ stvarni koraci online dijagnostike
+      dijagSteps: [
+        { num: '01', label: 'Korak 01 / sadržaj za potvrdu', text: 'Opis prvog koraka procesa dijagnostike unosi se nakon potvrde klijenta.' },
+        { num: '02', label: 'Korak 02 / sadržaj za potvrdu', text: 'Opis drugog koraka procesa dijagnostike unosi se nakon potvrde klijenta.' },
+        { num: '03', label: 'Korak 03 / sadržaj za potvrdu', text: 'Opis trećeg koraka procesa dijagnostike unosi se nakon potvrde klijenta.' }
+      ],
+      cards: cards,
+      dots: cards.map((c, i) => ({
+        label: 'Prikaži: ' + c.title,
+        bg: this.state.carIdx === i ? '#49A6B7' : 'rgba(178,219,213,0.28)',
+        go: () => this.goCard(i)
+      })),
+      priceCats: cats,
+      activeName: activeCat.name,
+      activeItems: withNote(activeCat.items),
+      activeHasItems: activeCat.items.length > 0,
+      activeEmpty: activeCat.items.length === 0,
+      results: [{ num: 'Rezultat 01' }, { num: 'Rezultat 02' }, { num: 'Rezultat 03' }],
+      world: [
+        { kind: 'Magazin', title: 'Pre svega nega', text: 'Tekstovi o koži i nezi — ono što se u salonu retko ima vremena objasniti do kraja.', domain: 'presveganega.com', href: 'https://presveganega.com/' },
+        { kind: 'Video', title: 'Pre svega nega na YouTube-u', text: 'Razgovori i odgovori na pitanja koja klijenti najčešće postavljaju.', domain: 'youtube.com/@pre_svega_nega', href: 'https://www.youtube.com/@pre_svega_nega' },
+        { kind: 'Edukacija', title: 'Kozmetičar.com', text: 'Profesionalne obuke za buduće i aktivne kozmetičare — odvojen put od salona.', domain: 'kozmeticar.com', href: 'https://kozmeticar.com/' }
+      ],
+      headerRef: this.headerRef,
+      tickerRef: this.tickerRef,
+      carRef: this.carRef,
+      rowsRef: this.rowsRef,
+      previewRef: this.previewRef,
+      previewLabel: this.previewLabel,
+      founderImg: this.founderImg,
+      pristupImg: this.pristupImg,
+      heroImg: this.heroImg,
+      founderPhoto: this.founderPhoto,
+      pristupPhoto: this.pristupPhoto,
+      vLabel: this.vLabel,
+      gridRef: this.gridRef,
+      utilAddr: this.utilAddr,
+      utilHours: this.utilHours,
+      formMsg: this.formMsg,
+      burstRef: this.burstRef,
+      burgerRef: this.burgerRef,
+      priceDesktop: this.priceDesktop,
+      priceMobile: this.priceMobile,
+      swipeHint: this.swipeHint,
+      menuOpen: !!this.state.menuOpen,
+      navLink1: this.navLinks[0],
+      navLink2: this.navLinks[1],
+      navLink3: this.navLinks[2],
+      navLink4: this.navLinks[3],
+      navLink5: this.navLinks[4],
+      toggleMenu: () => this.setMenu(!this.state.menuOpen),
+      closeMenu: () => this.setMenu(false),
+      submit: (e) => this.onSubmit(e),
+      prev: () => this.scrollCar(-1),
+      next: () => this.scrollCar(1)
+    };
+  }
+}
+
+</script>
+</body>
+</html>
