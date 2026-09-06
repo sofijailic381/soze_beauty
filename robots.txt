@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://USERNAME.github.io/soze-beauty/sitemap.xml
+
+Sitemap: https://KORISNIK.github.io/REPO/sitemap.xml

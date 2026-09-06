@@ -3,32 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SOŽE BEAUTY — kozmetički salon u Novom Sadu | Nega lica i tela</title>
-<meta name="description" content="SOŽE BEAUTY, kozmetički salon u Novom Sadu. Nega lica i tela, hemijski pilinzi, radiotalasni lifting, LED terapija, laserska epilacija i online dijagnostika kože.">
-<meta name="theme-color" content="#0F3F44">
-<link rel="canonical" href="https://USERNAME.github.io/soze-beauty/">
-<link rel="icon" href="assets/img/soze-beauty-bela-2x.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/img/soze-beauty-bela-2x.png">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="sr_RS">
-<meta property="og:site_name" content="SOŽE BEAUTY">
-<meta property="og:title" content="SOŽE BEAUTY — kozmetički salon u Novom Sadu">
-<meta property="og:description" content="Nega lica i tela, pilinzi, radiotalasni lifting, LED terapija i laserska epilacija. Online dijagnostika kože.">
-<meta property="og:image" content="assets/img/kozmeticki-salon-novi-sad-soze-beauty.webp">
-<meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BeautySalon",
-  "name": "SOŽE BEAUTY",
-  "image": "assets/img/kozmeticki-salon-novi-sad-soze-beauty.webp",
-  "telephone": "+381658887693",
-  "address": { "@type": "PostalAddress", "streetAddress": "Aranj Janoša 9", "postalCode": "21000", "addressLocality": "Novi Sad", "addressCountry": "RS" },
-  "hasMap": "https://www.google.com/maps?cid=9173733897705992512",
-  "priceRange": "$$"
-}
-</script>
+<title>SOŽE BEAUTY — Nega počinje razumevanjem</title>
+<meta name="description" content="Kozmetički salon SOŽE BEAUTY u Novom Sadu — tretmani lica i tela, laserska epilacija, online dijagnostika kože." />
+<meta name="theme-color" content="#0F3F44" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SOŽE BEAUTY" />
+<meta property="og:title" content="SOŽE BEAUTY — Nega počinje razumevanjem" />
+<meta property="og:description" content="Kozmetički salon SOŽE BEAUTY u Novom Sadu — tretmani lica i tela, laserska epilacija, online dijagnostika kože." />
+<meta property="og:image" content="assets/img/kozmeticki-salon-novi-sad-soze-beauty.webp" />
+<meta name="twitter:card" content="summary_large_image" />
 <script src="./support.js"></script>
+<link rel="icon" href="assets/img/soze-beauty-bela-2x.png" />
 </head>
 <body>
 <x-dc>
@@ -79,6 +64,7 @@
   @media (max-width: 1179px) { .sb-preview { display: none !important; } }
 
   @media (max-width: 859px) {
+    .sb-news { grid-template-columns: 1fr !important; }
     .sb-fluid { min-width: 0 !important; }
     .sb-two { flex-direction: column !important; flex-wrap: nowrap !important; }
     .sb-flat { display: contents !important; }
@@ -122,6 +108,11 @@
     /* tap zone: sve interaktivno najmanje 44px visine */
     .sb-utilbar { display: none !important; }
     .sb-dot { width: 44px !important; height: 44px !important; }
+    #tretmani { display: flex; flex-direction: column; }
+    #tretmani > *:nth-child(1) { order: 1; }
+    #tretmani > #tretmani-lista { order: 2; }
+    #tretmani > .sb-tret-foot { order: 4; }
+    #tretmani > .sb-tret-foot > a { width: 100%; justify-content: center; margin: 4px 0 clamp(56px, 9vw, 80px); }
     .sb-fcol > a, .sb-faddr a, .sb-inline-link {
       display: inline-flex !important; align-items: center; min-height: 44px !important;
     }
@@ -135,6 +126,9 @@
   @media (max-width: 389px) {
     .sb-quals { grid-template-columns: 1fr !important; }
     .sb-price-name, .sb-price-price { flex: 1 1 100% !important; }
+  }
+  @media (max-width: 767px) {
+    .sb-news-btn { justify-self: stretch !important; width: 100% !important; justify-content: center !important; }
   }
   @media (max-width: 375px) {
     .sb .sb-pad { padding-left: 16px !important; padding-right: 16px !important; }
@@ -171,11 +165,11 @@
         <img src="assets/img/soze-beauty-bela-2x.png" alt="SOŽE BEAUTY" width="2000" height="1128" style="display: block; height: clamp(40px, 3.4vw, 52px); width: auto;" />
       </a>
       <nav aria-label="Glavna navigacija" style="display: flex; align-items: center; gap: clamp(16px, 2vw, 32px);">
-        <a href="#tretmani" ref="{{ navLink1 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Tretmani</a>
+        <a href="tretmani.html" ref="{{ navLink1 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Tretmani</a>
         <a href="#dijagnostika" ref="{{ navLink2 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Dijagnostika</a>
-        <a href="#cenovnik" ref="{{ navLink3 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Cenovnik</a>
-        <a href="#o-nama" ref="{{ navLink4 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">O nama</a>
-        <a href="#iskustva" ref="{{ navLink5 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Iskustva</a>
+        <a href="cenovnik.html" ref="{{ navLink3 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Cenovnik</a>
+        <a href="o-nama.html" ref="{{ navLink4 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">O nama</a>
+        <a href="blog.html" ref="{{ navLink5 }}" class="sb-nav-link" style="font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,239,224,0.88);" style-hover="color: #B2DBD5;">Blog</a>
         <a href="#kontakt-forma" class="sb-hdr-cta" style="display: inline-flex; align-items: center; min-height: 46px; background: #49A6B7; color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 13px 22px; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Zakažite</a>
         <button type="button" ref="{{ burgerRef }}" onClick="{{ toggleMenu }}" aria-label="Meni" aria-expanded="{{ menuOpen }}" aria-controls="sb-mobile-menu" class="sb-burger" style="align-items: center; justify-content: center; width: 48px; height: 48px; background: transparent; border: 1px solid rgba(178,219,213,0.4); color: #B2DBD5; font-size: 16px; cursor: pointer;"><span ref="{{ burstRef }}">☰</span></button>
       </nav>
@@ -183,14 +177,11 @@
     <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
       <div id="sb-mobile-menu" class="sb-menu" style="background: rgba(15,63,68,0.98); border-top: 1px solid rgba(178,219,213,0.16); border-bottom: 1px solid rgba(178,219,213,0.16); animation: fadeIn 280ms ease both; max-height: 78vh; overflow-y: auto;">
         <div class="sb-pad" style="display: flex; flex-direction: column; padding: 6px clamp(20px, 4vw, 72px) 24px;">
-          <a href="#tretmani" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Tretmani</a>
+          <a href="tretmani.html" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Tretmani</a>
           <a href="#dijagnostika" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Online dijagnostika</a>
-          <a href="#cenovnik" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Cenovnik</a>
-          <a href="#o-nama" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">O nama</a>
-          <a href="#iskustva" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Iskustva</a>
-          <a href="#rezultati" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Rezultati</a>
-          <a href="#edukacija" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Edukacija</a>
-          <a href="#soze-svet" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">SOŽE svet</a>
+          <a href="cenovnik.html" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Cenovnik</a>
+          <a href="o-nama.html" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">O nama</a>
+          <a href="blog.html" onClick="{{ closeMenu }}" style="padding: 16px 0; border-bottom: 1px solid rgba(178,219,213,0.12); font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Blog</a>
           <a href="#kontakt" onClick="{{ closeMenu }}" style="padding: 16px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #F5EFE0;">Kontakt</a>
           <a href="#kontakt-forma" onClick="{{ closeMenu }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; margin-top: 22px; background: #49A6B7; color: #0F3F44; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 17px 22px;">Zakažite <span aria-hidden="true" style="font-size: 15px;">→</span></a>
           <a href="tel:+381658887693" onClick="{{ closeMenu }}" style="display: flex; align-items: center; justify-content: center; min-height: 50px; margin-top: 10px; border: 1px solid rgba(178,219,213,0.5); color: #F5EFE0; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; padding: 15px 22px;">+381 65 8887 693</a>
@@ -327,7 +318,7 @@
           </div>
 
           <!-- LINK ZA POVEZIVANJE: stranica „O nama / Ženjina priča” -->
-          <a href="#o-nama" data-reveal="1" class="sb-o5 sb-inline-link" style="display: inline-flex; align-items: center; gap: 12px; margin-top: clamp(26px, 3.2vw, 42px); font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #49A6B7; border-bottom: 1px solid rgba(73,166,183,0.5); padding-bottom: 10px;" style-hover="color: #B2DBD5;">Cela priča o SOŽE BEAUTY <span style="font-size: 14px;">→</span></a>
+          <a href="o-nama.html" data-reveal="1" class="sb-o5 sb-inline-link" style="display: inline-flex; align-items: center; gap: 12px; margin-top: clamp(26px, 3.2vw, 42px); font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #49A6B7; border-bottom: 1px solid rgba(73,166,183,0.5); padding-bottom: 10px;" style-hover="color: #B2DBD5;">Cela priča o SOŽE BEAUTY <span style="font-size: 14px;">→</span></a>
         </div>
       </div>
     </div>
@@ -368,7 +359,7 @@
         </sc-for>
       </div>
 
-      <a href="#dijagnostika" data-reveal="1" class="sb-inline-link" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; margin-top: clamp(34px, 4vw, 52px); border: 1px solid rgba(15,63,68,0.35); color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 17px 26px; transition: background 350ms ease, color 350ms ease, border-color 350ms ease;" style-hover="background: #0F3F44; color: #F5EFE0; border-color: #0F3F44;">Opišite nam svoju kožu <span style="font-size: 14px;">→</span></a>
+      <a href="#kontakt-forma" data-reveal="1" class="sb-inline-link" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; margin-top: clamp(34px, 4vw, 52px); border: 1px solid rgba(15,63,68,0.35); color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 17px 26px; transition: background 350ms ease, color 350ms ease, border-color 350ms ease;" style-hover="background: #0F3F44; color: #F5EFE0; border-color: #0F3F44;">Opišite nam svoju kožu <span style="font-size: 14px;">→</span></a>
     </div>
   </section>
 
@@ -440,7 +431,8 @@
       </sc-for>
     </div>
 
-    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 72px) clamp(70px, 9vw, 118px); display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px;">
+
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 72px) clamp(26px, 3vw, 40px); display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px;">
       <div class="sb-arrows" style="display: flex; gap: 8px;">
         <button type="button" aria-label="Prethodni tretman" aria-controls="tretmani-lista" onClick="{{ prev }}" style="width: 48px; height: 48px; background: transparent; border: 1px solid rgba(178,219,213,0.4); color: #B2DBD5; font-size: 16px; cursor: pointer; transition: background 350ms ease, color 350ms ease;" style-hover="background: #49A6B7; color: #0F3F44;">←</button>
         <button type="button" aria-label="Sledeći tretman" aria-controls="tretmani-lista" onClick="{{ next }}" style="width: 48px; height: 48px; background: transparent; border: 1px solid rgba(178,219,213,0.4); color: #B2DBD5; font-size: 16px; cursor: pointer; transition: background 350ms ease, color 350ms ease;" style-hover="background: #49A6B7; color: #0F3F44;">→</button>
@@ -451,6 +443,9 @@
         </button>
       </sc-for>
     </div>
+    <div class="sb-tret-foot sb-pad" style="max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 72px); display: flex;">
+      <a href="tretmani.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; margin: 0 0 clamp(70px, 9vw, 118px); background: #49A6B7; color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 28px; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Pogledajte sve tretmane <span aria-hidden="true" style="font-size: 14px;">→</span></a>
+    </div>
   </section>
 
   <!-- ═══════════ 06 / CENOVNIK — SVE CENE SE MENJAJU U priceCategories (logika) ═══════════ -->
@@ -460,7 +455,7 @@
 
       <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-top: clamp(30px, 3.8vw, 54px);">
         <h2 data-reveal="1" class="sb-price-h2" style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.6vw, 68px); line-height: 1.04; letter-spacing: -0.026em; color: #F5EFE0;"><span style="font-style: italic; color: #B2DBD5;">Cenovnik</span> usluga</h2>
-        <p data-reveal="1" style="max-width: 34ch; margin: 0; font-size: 15px; line-height: 1.75; color: rgba(245,239,224,0.8);">Cene su iskazane po pojedinačnom tretmanu, osim kada je u nazivu navedeno drugačije. <span class="sb-desktop-only" style="color: #B2DBD5;">Datum važenja cenovnika — SADRŽAJ ZA POTVRDU.</span></p>
+        <p data-reveal="1" style="max-width: 34ch; margin: 0; font-size: 15px; line-height: 1.75; color: rgba(245,239,224,0.8);">Cene su iskazane po pojedinačnom tretmanu, osim kada je u nazivu navedeno drugačije. Cene su izražene u RSD sa PDV-om. <span class="sb-desktop-only" style="color: #B2DBD5;">Važeći cenovnik od 01.01.2025.</span></p>
       </div>
 
       <!-- DESKTOP: kategorije levo (30%) + stavke desno (70%) -->
@@ -630,7 +625,96 @@
     </div>
   </section>
 
-  <!-- ═══════════ 09 / EDUKACIJA (sekundarni poslovni pravac) ═══════════ -->
+  <!-- ═══════════ 09 / BLOG — tekstovi se menjaju u blogPosts (logika) ═══════════ -->
+  <section id="blog" style="position: relative; z-index: 1; scroll-margin-top: 140px; background: #12494F; border-top: 1px solid rgba(178,219,213,0.18); border-bottom: 1px solid rgba(178,219,213,0.18);">
+    <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(70px, 9vw, 136px) clamp(20px, 4vw, 72px);">
+      <div data-reveal="1" style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; padding-bottom: 20px; border-bottom: 1px solid rgba(178,219,213,0.18);">09 / Blog</div>
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-top: clamp(30px, 3.8vw, 54px);">
+        <h2 data-reveal="1" style="margin: 0; max-width: 22ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.8vw, 56px); line-height: 1.06; letter-spacing: -0.024em; color: #F5EFE0; text-wrap: pretty;">Poslednje <span style="font-style: italic; color: #B2DBD5;">blog teme</span></h2>
+        <p data-reveal="1" style="max-width: 34ch; margin: 0; font-size: 15px; line-height: 1.75; color: rgba(245,239,224,0.8);">Ono što u salonu retko ima vremena da se objasni do kraja.</p>
+      </div>
+
+      <div class="sb-blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(16px, 1.8vw, 26px); margin-top: clamp(32px, 4vw, 56px);">
+        <sc-for list="{{ posts }}" as="p" hint-placeholder-count="3">
+          <article data-reveal="1" style="display: flex; flex-direction: column; border: 1px solid rgba(178,219,213,0.22); padding: clamp(12px, 1.2vw, 16px);">
+            <div style="position: relative; aspect-ratio: 4 / 3; background: rgba(178,219,213,0.07); border: 1px solid rgba(178,219,213,0.16); display: flex; align-items: center; justify-content: center;">
+              <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,239,224,0.5); text-align: center; padding: 0 16px;">{{ p.slot }}</span>
+            </div>
+            <div style="display: flex; gap: 10px; margin: 16px 0 10px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #49A6B7;">
+              <span>{{ p.kicker }}</span>
+            </div>
+            <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(20px, 2vw, 26px); line-height: 1.22; color: #F5EFE0;">{{ p.title }}</h3>
+            <p style="margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: rgba(245,239,224,0.78); text-wrap: pretty;">{{ p.lead }}</p>
+            <button type="button" onClick="{{ p.open }}" style="display: inline-flex; align-items: center; gap: 10px; align-self: flex-start; min-height: 44px; margin-top: auto; padding: 14px 0 0; background: none; border: 0; font: inherit; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #49A6B7; cursor: pointer; transition: color 250ms ease;" style-hover="color: #B2DBD5;">Pročitaj više <span aria-hidden="true" style="font-size: 14px;">→</span></button>
+          </article>
+        </sc-for>
+      </div>
+
+      <div data-reveal="1" style="display: flex; margin-top: clamp(30px, 3.6vw, 48px);">
+        <a href="blog.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 48px; background: #49A6B7; color: #0F3F44; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 28px; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Svi tekstovi na blogu <span style="font-size: 14px;">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ postOpen }}" hint-placeholder-val="{{ false }}">
+    <div role="dialog" aria-modal="true" style="position: fixed; inset: 0; z-index: 95; background: #0B3236; overflow-y: auto; -webkit-overflow-scrolling: touch;">
+      <div class="sb-pad" style="max-width: 1180px; margin: 0 auto; padding: clamp(20px, 4vw, 44px) clamp(20px, 4vw, 60px) clamp(60px, 8vw, 96px);">
+        <button type="button" onClick="{{ closePost }}" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; padding: 10px 0; background: none; border: 0; font: inherit; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #49A6B7; cursor: pointer;" style-hover="color: #B2DBD5;"><span aria-hidden="true" style="font-size: 18px;">←</span> Nazad na blog</button>
+
+        <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7; margin-top: clamp(24px, 3vw, 40px);">{{ postKicker }}</div>
+        <h2 style="margin: 16px 0 0; max-width: 26ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(30px, 4vw, 56px); line-height: 1.06; letter-spacing: -0.024em; color: #F5EFE0; text-wrap: pretty;">{{ postTitle }}</h2>
+
+        <div style="position: relative; aspect-ratio: 16 / 9; max-width: 520px; margin: clamp(26px, 3vw, 38px) 0 0; background: rgba(178,219,213,0.07); border: 1px solid rgba(178,219,213,0.22); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,239,224,0.5); text-align: center; padding: 0 18px;">Mesto za fotografiju teksta</span>
+        </div>
+
+        <sc-for list="{{ postBody }}" as="b" hint-placeholder-count="1">
+          <div style="margin-top: clamp(26px, 3vw, 38px);">
+            <sc-if value="{{ b.heading }}" hint-placeholder-val="{{ false }}">
+              <h3 style="margin: 0 0 6px; max-width: 30ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(22px, 2.4vw, 32px); line-height: 1.16; letter-spacing: -0.018em; color: #F5EFE0;">{{ b.heading }}</h3>
+            </sc-if>
+            <sc-for list="{{ b.paras }}" as="p" hint-placeholder-count="2">
+              <p style="max-width: 72ch; margin: 16px 0 0; font-size: 17px; line-height: 1.85; color: rgba(245,239,224,0.86); text-wrap: pretty;">{{ p.t }}</p>
+            </sc-for>
+          </div>
+        </sc-for>
+
+        <div style="margin-top: clamp(44px, 5vw, 72px); padding-top: clamp(26px, 3vw, 36px); border-top: 1px solid rgba(178,219,213,0.18);">
+          <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7;">Related posts</div>
+          <div class="sb-blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(14px, 1.6vw, 22px); margin-top: clamp(20px, 2.4vw, 30px);">
+            <sc-for list="{{ related }}" as="r" hint-placeholder-count="3">
+              <article style="display: flex; flex-direction: column; border: 1px solid rgba(178,219,213,0.22); padding: 12px;">
+                <div style="position: relative; aspect-ratio: 4 / 3; background: rgba(178,219,213,0.07); border: 1px solid rgba(178,219,213,0.16); display: flex; align-items: center; justify-content: center;">
+                  <span style="font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,239,224,0.5); text-align: center; padding: 0 14px;">{{ r.slot }}</span>
+                </div>
+                <h4 style="margin: 14px 0 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: 19px; line-height: 1.25; color: #F5EFE0;">{{ r.title }}</h4>
+                <p style="margin: 8px 0 0; font-size: 14px; line-height: 1.65; color: rgba(245,239,224,0.7);">Kratak opis — sadržaj za dopunu.</p>
+              </article>
+            </sc-for>
+          </div>
+        </div>
+
+        <div style="margin-top: clamp(44px, 5vw, 72px); padding-top: clamp(26px, 3vw, 36px); border-top: 1px solid rgba(178,219,213,0.18);">
+          <h3 style="margin: 0; max-width: 26ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.8vw, 38px); line-height: 1.12; color: #F5EFE0;">Imaš pitanja ili želiš da nam pišeš? <span style="font-style: italic; color: #B2DBD5;">Piši nam</span></h3>
+          <form onSubmit="{{ blogSubmit }}" style="display: grid; gap: 14px; max-width: 560px; margin-top: clamp(22px, 2.6vw, 32px);">
+            <label style="display: grid; gap: 8px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.75);">Ime
+              <input type="text" name="ime" autoComplete="name" style="background: transparent; border: 1px solid rgba(178,219,213,0.35); color: #F5EFE0; font-family: inherit; font-size: 16px; padding: 14px;" />
+            </label>
+            <label style="display: grid; gap: 8px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.75);">Email
+              <input type="email" name="email" autoComplete="email" style="background: transparent; border: 1px solid rgba(178,219,213,0.35); color: #F5EFE0; font-family: inherit; font-size: 16px; padding: 14px;" />
+            </label>
+            <label style="display: grid; gap: 8px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.75);">Poruka
+              <textarea name="poruka" rows="5" style="background: transparent; border: 1px solid rgba(178,219,213,0.35); color: #F5EFE0; font-family: inherit; font-size: 16px; padding: 14px; resize: vertical;"></textarea>
+            </label>
+            <button type="submit" style="justify-self: start; display: inline-flex; align-items: center; gap: 12px; min-height: 48px; background: #49A6B7; border: 0; color: #0F3F44; font: inherit; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 28px; cursor: pointer; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Pošalji <span aria-hidden="true" style="font-size: 14px;">→</span></button>
+            <p ref="{{ blogMsg }}" role="status" style="margin: 0; min-height: 20px; font-size: 13px; line-height: 1.6; color: #B2DBD5;"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ═══════════ 10 / EDUKACIJA (sekundarni poslovni pravac) ═══════════ -->
   <section id="edukacija" style="position: relative; z-index: 1; scroll-margin-top: 140px; background: #0F3F44; border-bottom: 1px solid rgba(178,219,213,0.18);">
     <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(54px, 6.6vw, 90px) clamp(20px, 4vw, 72px); display: flex; flex-wrap: wrap; gap: clamp(26px, 3.6vw, 60px); align-items: flex-start;">
       <div class="sb-fluid" data-reveal="1" style="flex: 0 1 230px; min-width: 190px;">
@@ -732,6 +816,36 @@
       </div>
     </div>
 
+    <!-- ═══════════ NEWSLETTER ═══════════ -->
+    <div style="border-top: 1px solid rgba(178,219,213,0.18);">
+      <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(60px, 8vw, 110px) clamp(20px, 4vw, 72px);">
+        <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 480px); gap: clamp(30px, 4vw, 64px); align-items: start;" class="sb-news">
+          <div>
+            <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #49A6B7;">Newsletter</div>
+            <h2 style="margin: 16px 0 0; max-width: 22ch; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.8vw, 56px); line-height: 1.06; letter-spacing: -0.024em; color: #F5EFE0; text-wrap: pretty;">Prijavite se na naš <span style="font-style: italic; color: #B2DBD5;">newsletter</span></h2>
+            <p style="max-width: 58ch; margin: 22px 0 0; font-size: 17px; line-height: 1.75; color: rgba(245,239,224,0.86); text-wrap: pretty;">Newsletter je besplatan sadržaj koji delimo sa Vama.</p>
+            <p style="max-width: 58ch; margin: 16px 0 0; font-size: 16px; line-height: 1.8; color: rgba(245,239,224,0.82); text-wrap: pretty;">Informacije su dostupne na svakom koraku. Za upijanje, primenu i testiranje svega što pročitate potrebno je dosta vremena.</p>
+            <p style="max-width: 58ch; margin: 16px 0 0; font-size: 16px; line-height: 1.8; color: rgba(245,239,224,0.82); text-wrap: pretty;">U ovom newsletteru delimo sa Vama svakog ponedeljka u 12h informacije koje će Vam olakšati skincare rutinu, uštedeti vreme i dati još bolje rezultate nakon tretmana. Ako nam ne verujete — prijavite se, besplatno je.</p>
+          </div>
+
+          <form onSubmit="{{ newsSubmit }}" style="display: grid; gap: 14px; padding: clamp(22px, 2.6vw, 34px); border: 1px solid rgba(178,219,213,0.22); background: rgba(178,219,213,0.05);">
+            <label style="display: grid; gap: 8px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.75);">Ime
+              <input type="text" name="ime" autoComplete="name" style="background: transparent; border: 1px solid rgba(178,219,213,0.35); color: #F5EFE0; font-family: inherit; font-size: 16px; padding: 14px;" />
+            </label>
+            <label style="display: grid; gap: 8px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.75);">Email
+              <input type="email" name="email" autoComplete="email" style="background: transparent; border: 1px solid rgba(178,219,213,0.35); color: #F5EFE0; font-family: inherit; font-size: 16px; padding: 14px;" />
+            </label>
+            <label style="display: grid; gap: 8px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,239,224,0.75);">Telefon
+              <input type="tel" name="telefon" autoComplete="tel" style="background: transparent; border: 1px solid rgba(178,219,213,0.35); color: #F5EFE0; font-family: inherit; font-size: 16px; padding: 14px;" />
+            </label>
+            <button type="submit" class="sb-news-btn" style="justify-self: stretch; justify-content: center; display: inline-flex; align-items: center; gap: 12px; min-height: 48px; background: #49A6B7; border: 0; color: #0F3F44; font: inherit; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 28px; cursor: pointer; transition: background 350ms ease;" style-hover="background: #B2DBD5;">Prijavi se <span aria-hidden="true" style="font-size: 14px;">→</span></button>
+            <p style="margin: 0; font-size: 12px; line-height: 1.6; color: rgba(245,239,224,0.55);">Sa ovog newslettera se u svakom momentu možete odjaviti klikom na dugme „Odjavite se”.</p>
+            <p ref="{{ newsMsg }}" role="status" style="margin: 0; min-height: 18px; font-size: 13px; line-height: 1.6; color: #B2DBD5;"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <div style="border-top: 1px solid rgba(178,219,213,0.18);">
       <div class="sb-pad" style="max-width: 1440px; margin: 0 auto; padding: clamp(38px, 5vw, 64px) clamp(20px, 4vw, 72px);">
@@ -743,8 +857,8 @@
           <div>
             <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7; margin-bottom: 16px;">Nega</div>
             <div class="sb-fcol" style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; letter-spacing: 0.04em;">
-              <a href="#tretmani" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Tretmani</a>
-              <a href="#cenovnik" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Cenovnik</a>
+              <a href="tretmani.html" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Tretmani</a>
+              <a href="cenovnik.html" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Cenovnik</a>
               <a href="#potrebe" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Potrebe kože</a>
               <a href="#dijagnostika" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Online dijagnostika</a>
             </div>
@@ -752,7 +866,7 @@
           <div>
             <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #49A6B7; margin-bottom: 16px;">Brend</div>
             <div class="sb-fcol" style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; letter-spacing: 0.04em;">
-              <a href="#o-nama" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">O nama</a>
+              <a href="o-nama.html" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">O nama</a>
               <a href="#rezultati" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Rezultati</a>
               <a href="#iskustva" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Iskustva</a>
               <a href="#edukacija" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Edukacija</a>
@@ -773,6 +887,8 @@
               <a href="#kontakt-forma" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Zakazivanje</a>
               <a href="tel:+381658887693" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Telefon</a>
               <a href="#kontakt" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Politika privatnosti</a>
+              <a href="#kontakt" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Naša politika cena</a>
+              <a href="#kontakt" style="color: rgba(245,239,224,0.82);" style-hover="color: #B2DBD5;">Pravila i uslovi korišćenja vaučera</a>
             </div>
           </div>
         </div>
@@ -785,12 +901,85 @@
       </div>
     </div>
   </section>
+  <!-- Nazad na početak — radi i u otvorenim prozorima (overlay) -->
+  <button type="button" onClick="{{ scrollTop }}" aria-label="Nazad na početak" style="position: fixed; right: clamp(16px, 3vw, 28px); bottom: clamp(16px, 3vw, 28px); z-index: 120; display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; opacity: {{ topOpacity }}; visibility: {{ topVis }}; background: rgba(15,63,68,0.92); border: 1px solid rgba(178,219,213,0.5); color: #B2DBD5; font: inherit; font-size: 18px; cursor: pointer; backdrop-filter: blur(6px); transition: background 300ms ease, border-color 300ms ease, color 300ms ease, opacity 300ms ease;" style-hover="background: #49A6B7; border-color: #49A6B7; color: #0F3F44;">↑</button>
 </div>
 
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;gridLines&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Kompozicija&quot;},&quot;tickerSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:52,&quot;min&quot;:25,&quot;max&quot;:90,&quot;step&quot;:2,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Kretanje&quot;}}">
 class Component extends DCLogic {
-  state = { menuOpen: false, priceCat: 0, openCat: 0, carIdx: 0 };
+  state = { menuOpen: false, priceCat: 0, openCat: 0, carIdx: 0, post: null, showTop: false };
+
+  // ══ SADRŽAJ ══ BLOG — naslovi i uvodi objava (tekstovi se dopunjuju)
+  blogPosts = [
+    { kicker: 'Nega kože', title: 'Kako da uklonite bubuljice sa leđa, lica i tela', lead: 'Ne postoji ništa toliko iritantno i uznemirujuće kao bubuljica koja se preko noći iznenada pojavi na našem obrazu ili čelu, ili pak niz istih, kada…', slot: 'Blog foto 01 · 4:3',
+      body: [
+        { paras: [
+          'Ne postoji ništa toliko iritantno i uznemirujuće kao bubuljica koja se preko noći iznenada pojavi na našem obrazu ili čelu, ili pak niz istih, kada u jeku leta prekriju naša leđa.',
+          'Naročito ukoliko nezi kože posvećujete svakodnevnu pažnju. Ne samo da ti ružni prištevi narušavaju izgled naše kože, što u velikoj meri utiče na naše samopouzdanje, već vrlo često mogu biti bolni, upaljeni i otečeni.',
+          'U izvesnom broju slučajeva ne postoji ništa što možete uraditi kako biste sprečili pojavu akni (ukoliko je po sredi hormonski disbalans, na primer), ali vam možemo pomoći savetima kako da ih uspešno uklonite i sprečite nastanak ožiljaka koji mogu ostati nakon bubuljice.'
+        ] },
+        { heading: 'Šta su to bubuljice i od čega nastaju?', paras: [
+          'Za početak, hajde da jasno definišemo šta podrazumeva pojam bubuljice i šta sve može biti uzrok njenog nastanka.',
+          'Akna ili bubuljica je lokalno oboljenje sebacealnih ili lojnih žlezda, a manifestuje se kao crvena i često otečena izraslina na koži tela i lica, u čijem sedištu se najčešće nalazi gnojanica ili čepić.',
+          'Uzroci nastanka bubuljica mogu biti mnogobrojni, a u najčešće spadaju hormonski disbalans u telu, odsustvo adekvatne nege kože lica i tela, stres, loše navike u ishrani i genetika.',
+          'Važno je razlikovati hormonske bubuljice od bubuljica koje nastaju pod dejstvom spoljnih faktora, kao što su bubuljice od sunca ili od znoja.',
+          'Suštinski, do problema ovog tipa dolazi kada se pore na koži začepe usled pojačanog lučenja sebuma, a potom dođu u kontakt sa nečistoćama iz spoljašnje sredine i izumrlim ćelijama kože koje se prirodno nakupljaju.'
+        ] },
+        { heading: 'Bubuljice na leđima i po telu', paras: [
+          'Bubuljice se mogu javiti bilo gde na telu, iako su pojedine regije pogodnije od drugih za njihovu pojavu i širenje.',
+          'Veliki broj muškaraca i žena suočava se sa problemom bubuljica na leđima, koji može biti veoma neugodan i naročito opteretiti tokom letnjih dana, kada je koža tela izloženija pogledima.',
+          'Akne i bubuljice na leđima ponekad nastaju zbog neadekvatne ishrane, naročito ukoliko postoji netolerancija na neku vrstu namirnica, a drugi razlog su genetika i stres svakodnevnog života.',
+          'Postoje različiti tipovi bubuljica koje se pojavljuju na ovoj regiji tela i poželjno je razlikovati ih, kako bi se za njihovo uklanjanje primenio odgovarajući pristup.',
+          'Bubuljice po leđima mogu biti mitiseri ili komedoni — pore ispunjene sebumom i prljavštinom, ciste — gnojne bubuljice duboko pod kožom, papule — upaljene sitne bubuljice, pustule — klasične bele zagnojane akne, ili noduli — potkožne bubuljice.',
+          'Kako biste sprečili njihov nastanak, poželjno je da nosite odeću od prirodnih materijala kako bi koža ispod nje mogla da diše, da koristite produkte za negu koji nisu na bazi ulja i da regulišete način ishrane.'
+        ] },
+        { heading: 'Bubuljice na vratu i dekolteu', paras: [
+          'Iako bubuljice na dekolteu mogu imati pripadnici oba pola, ovo je naročito osetljivo pitanje za dame.',
+          'Dekolte i vrat su regije sa izuzetno delikatnom kožom i treba im posebna nega i pažnja, a budući da su gotovo uvek vidljivi, bubuljice na grudima znatno utiču na samopouzdanje.',
+          'Zato je važno učiniti sve kako bi se ova pojava sprečila: koristiti isključivo preparate koji su po sastavu neinvazivni, blagi i pH neutralni, izbegavati parabene i sulfate.',
+          'Istuširati se odmah nakon treninga ili druge aktivnosti koja izaziva prekomerno znojenje, kako bi se sprečilo zapušavanje pora, i ne ignorisati pojavu ove vrste akni jer one mogu ukazati na neki drugi problem u organizmu.',
+          'Bubuljice na grudima mogu biti kratkotrajna ili dugotrajna pojava, u zavisnosti od uzroka nastanka — sitne i tek blago crvene, ili upaljene i veoma bolne.',
+          'Vrlo često su rezultat uzimanja određenih vrsta medikamenata, hormonskog poremećaja, genetike, izuzetno visokog nivoa stresa ili nekog zdravstvenog problema.',
+          'Način lečenja ovih akni u mnogome zavisi od razloga zbog kog su nastale, pa je neophodno ustanoviti tačan uzrok.'
+        ] },
+        { heading: 'Bubuljice po glavi i bubuljice na nosu', paras: [
+          'Bubuljice po glavi su jednako učestale kao one na licu ili telu, ali ih je nešto teže tretirati zbog kose koja ih prekriva.',
+          'Iako je najčešće reč o aknama koje su sporadične i prolaze same od sebe, dešava se i da se radi o ozbiljnijem kožnom oboljenju koje je potrebno adekvatno lečiti — i to ne na svoju ruku, jer se tako situacija može dodatno pogoršati.',
+          'Ove bubuljice primetimo onda kada počnu da nas bole ili svrbe i kada uspemo da ih napipamo ispod kose, a tada je upalni proces uveliko na snazi.',
+          'Uzrok mogu biti gljivična ili bakterijska infekcija, odsustvo higijene, stres, prekomerno znojenje ili upotreba neadekvatnih preparata za kosu.',
+          'Bubuljice na nosu su veoma česte, čak i kod osoba koje generalno nemaju problem sa bubuljicama, zato što nos spada u takozvanu T-zonu koja je masnija od ostatka lica, pa izraženije lučenje sebuma u kombinaciji sa nečistoćama često rezultira aknama.',
+          'Da ne biste došli u ovaj nepoželjni scenario — jer je bubuljicu na nosu veoma teško prikriti — poželjno je svakodnevno i veoma temeljno pristupiti čišćenju lica.',
+          'Sitne mitisere koji gotovo kod svih postoje na i oko regije nosa ljudi često cede sami, pa se neretko dešava da tako samo pogoršaju stvar i dovedu do upalnog procesa. Bubuljicu na nosu najbolje je osušiti kremama koje služe toj svrsi — nikako cediti!'
+        ] },
+        { heading: 'Bubuljice na licu i čelu', paras: [
+          'Bubuljice na licu su jedna od najvećih noćnih mora velikog broja ljudi, a sa ovom vrstom estetskog problema čak 85% muškaraca i žena susretne se nekada tokom života.',
+          'Pubertet je prva faza koja sasvim izvesno donosi pojavu crvenih i bolnih akni, ali isti vid prišteva može se pojaviti i tokom trudnoće, menopauze, postporođajnog perioda i u svim drugim situacijama kada telo prolazi kroz hormonalnu promenu.',
+          'One se najteže i najduže leče, a velika je verovatnoća da će iza sebe ostaviti i ožiljke.',
+          'Osim ove vrste bubuljica, na licu se mogu pojaviti i papule — ružičaste bubuljice koje izgledaju kao čvorići, pustule — gnojne bubuljice koje nas povremeno iznenade, potkožne bubuljice koje mogu biti veoma bolne, kao i cistične akne.',
+          'Postupci lečenja su različiti, pa je potrebno pristupiti svakom od ovih problema na poseban način. Bubuljice na čelu nešto su drugačije od prethodno pomenutih i najčešće se pojavljuju u vidu sitnog osipa.',
+          'Njihova pojava vezuje se uglavnom za kombinaciju prekomernog znojenja i lučenja sebuma sa nečistoćama koje se prirodno nakupljaju na koži. Najpouzdanija preventiva je redovno čišćenje ove regije, upotreba nemasnih losiona i povremeni piling.'
+        ] },
+        { heading: 'Kako ukloniti bubuljice i ožiljke od bubuljica', paras: [
+          'Ukoliko se pitate kako se rešiti bubuljica na leđima, ali i onih koje se nastanjuju na koži lica, odgovor leži u nekoliko pristupa.',
+          'Najpre, tu su kreme protiv bubuljica, prirodni melemi i metode, ali i kozmetički tretmani. Kod upotrebe krema veoma je važno konsultovati se sa kozmetologom ili dermatologom, budući da je važno tačno ustanoviti o kom tipu bubuljica je reč — a time i koji sastojci kreme su neophodni da bi upotreba imala efekta.',
+          'Još važnije, na taj način ćete izbeći dodatno pogoršavanje situacije potencijalnim korišćenjem pogrešne kreme.',
+          'To su najčešće antibiotske kreme ili one na bazi salicilne kiseline koja deluje protivupalno, alfa-hidroksi kiseline koja pomaže u regeneraciji kože, alantoina koji poboljšava mikrocirkulaciju ili sumpora koji pomaže kod otklanjanja ožiljaka.',
+          'U domenu prirodnih metoda postoje mnogobrojna rešenja, ali je tu ključno razlučiti koja su odgovarajuća za svaki tip kože. Izuzetno je važno dodatno ne mastiti već prirodno masnu kožu, koja je u problemu upravo zbog prekomernog lučenja sebuma.',
+          'U delotvorna sredstva spadaju med, koji je prirodni antibiotik i antiseptik, soda bikarbona koja umiruje upalu i crvenilo oko bubuljica, beli luk koji je čudotvoran kod lečenja akni, ili čuvarkuća od koje se može napraviti efikasna maska.',
+          'Ukoliko se pitate kako ukloniti ožiljke od bubuljica, tu je limun čija askorbinska kiselina prodire u oštećeno tkivo i leči ga. Aktivni ugalj je delotvoran kod problema sa mitiserima, matičnjak i tamjan su još jedno rešenje kod ožiljaka jer imaju sposobnost da ih izblede, a cimet zateže pore i pomaže kod crvenila.',
+          'Postoji, naravno, još čitav niz prirodnih sastojaka i recepata koje možete isprobati ukoliko smatrate da je taj vid lečenja bubuljica adekvatan.',
+          'I na kraju, tu su kozmetički tretmani kojima se možete podvrgnuti kada se suočite sa problemom bubuljica ili ožiljaka koji ostanu iza njih.'
+        ] },
+        { heading: 'Kako ukloniti bubuljice sa lica?', paras: [
+          'Najpre, tu je higijenski tretman i čišćenje lica ultrazvučnom špatulom, koji će odstraniti sve nečistoće sa vašeg lica. Otkloniće gnojanice na način koji neće zakomplikovati situaciju i pripremiti kožu za dalje tretmane.',
+          'Laserski tretmani takođe su se pokazali kao veoma delotvorni kod kože prekrivene aknama, jer deluju dubinski i regenerišu ćelije, kao i pilinzi voćnim kiselinama koji su efektni i u domenu uklanjanja ožiljnog tkiva.',
+          'Ukoliko vas muči činjenica da su akne ostavile trag za sobom, možete se podvrgnuti i mikrodermoabraziji, kao i dermapen tretmanu, koji će nakon izvesnog broja ponavljanja u mnogome poboljšati izgled vaše kože i drastično ublažiti, ako ne i sasvim ukloniti, ožiljke od bubuljica.'
+        ] }
+      ] },
+    { kicker: 'Tretmani', title: 'Kako se boriti protiv uraslih dlaka?', lead: 'Urasle dlake su problem sa kojim se bori veliki broj ljudi. Nekada su one samo estetski problem, ali često mogu da dovedu čak i do…', slot: 'Blog foto 02 · 4:3' },
+    { kicker: 'Saveti', title: 'Mišići lica elektrostimulisani Mioliftom', lead: 'Dame danas, više nego ikada, ulažu u negu kože lica što je za svaku pohvalu. Ali činjenica je da redovni kozmetički tretmani, te aplikacija seruma,…', slot: 'Blog foto 03 · 4:3' }
+  ];
 
   // ══ SADRŽAJ ══ CENOVNIK — jedino mesto za izmenu cena i naziva.
   // Struktura: { name, price, duration, note }. Cene su preuzete iz zvaničnog
@@ -912,12 +1101,27 @@ class Component extends DCLogic {
 
   constructor(props) {
     super(props);
+    this.blogMsg = React.createRef();
+    this.newsMsg = React.createRef();
     ['headerRef','tickerRef','carRef','rowsRef','previewRef','previewLabel','previewImg','founderImg','pristupImg','heroImg','founderPhoto','pristupPhoto','vLabel','burstRef','burgerRef','utilAddr','utilHours','gridRef','formMsg','priceDesktop','priceMobile','swipeHint']
       .forEach((k) => { this[k] = React.createRef(); });
     this.navLinks = Array.from({ length: 5 }, () => React.createRef());
   }
 
   componentDidMount() {
+// Strelica „nazad na početak" — vidljiva posle 60% skrola
+    this.onScrollTopWatch = () => {
+      const d = document.querySelector('[role="dialog"][aria-modal="true"]');
+      let show;
+      if (d && d.scrollHeight > d.clientHeight) {
+        show = d.scrollTop > (d.scrollHeight - d.clientHeight) * 0.6;
+      } else {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        show = max > 0 && window.scrollY > max * 0.6;
+      }
+      if (show !== this.state.showTop) this.setState({ showTop: show });
+    };
+    document.addEventListener('scroll', this.onScrollTopWatch, true);
     const dur = this.props.tickerSeconds ?? 52;
     if (this.tickerRef.current) this.tickerRef.current.style.animationDuration = dur + 's';
 
@@ -931,6 +1135,20 @@ class Component extends DCLogic {
       if (this.burgerRef.current) this.burgerRef.current.focus();
     };
     window.addEventListener('keydown', this.onKey);
+
+    // Skok na sekciju/formu iz hasha (dolazak sa stranice tretmani)
+    this.goHash = () => {
+      const id = (window.location.hash || '').slice(1);
+      if (!id) return;
+      const el = document.getElementById(decodeURIComponent(id));
+      if (!el) return;
+      const top = el.getBoundingClientRect().top + window.scrollY - 140;
+      window.scrollTo({ top: Math.max(0, top), behavior: 'auto' });
+    };
+    requestAnimationFrame(() => requestAnimationFrame(this.goHash));
+    setTimeout(this.goHash, 400);
+    window.addEventListener('load', this.goHash);
+    window.addEventListener('hashchange', this.goHash);
 
     if (this.carRef.current) {
       this.onCarScroll = () => {
@@ -1035,10 +1253,13 @@ class Component extends DCLogic {
   }
 
   componentWillUnmount() {
+    document.removeEventListener('scroll', this.onScrollTopWatch, true);
     window.removeEventListener('scroll', this.onScroll);
     window.removeEventListener('resize', this.onResize);
     window.removeEventListener('hashchange', this.onHash);
     window.removeEventListener('keydown', this.onKey);
+    window.removeEventListener('load', this.goHash);
+    window.removeEventListener('hashchange', this.goHash);
     document.body.style.overflow = '';
     if (this.carRef.current && this.onCarScroll) {
       this.carRef.current.removeEventListener('scroll', this.onCarScroll);
@@ -1140,20 +1361,64 @@ class Component extends DCLogic {
     // ══ SADRŽAJ ══ Grupe tretmana = kategorije iz cenovnika. Trajanja nisu navedena
     // jer nisu potvrđena. href → stranica konkretnog tretmana (developer povezuje).
     const cards = [
-      { num: '01', cat: 'Lice', title: 'Tretmani lica', text: 'Od higijenskog tretmana i čišćenja do hidratacije, pilinga i radiotalasnog liftinga.', photo: 'Nanošenje maske tokom tretmana lica', img: 'assets/img/tretmani-lica-1-c24d3ff1.jpg', pos: 'center 40%', href: '#tretmani-lica' },
-      { num: '02', cat: 'Personalizovano', title: 'Ženjin ritual', text: 'Personalizovani tretman. Sadržaj rituala — sadržaj za potvrdu.', photo: 'Ženja Trbojević tokom tretmana lica u salonu', img: 'assets/img/zenjin-ritual.png', pos: 'center 25%', href: '#zenjin-ritual' },
-      { num: '03', cat: 'Lice i telo', title: 'Bloomea Neocare Advanced', text: 'Tretman lica i tretman tela. Protokol — sadržaj za potvrdu.', photo: 'Bloomea NeoCare Advanced uređaj', img: 'assets/img/bloomea-neocare-advanced-1c994708.jpg', pos: 'center center', href: '#bloomea-neocare' },
-      { num: '04', cat: 'Lice i telo', title: 'LED terapija — Dermalux Flex MD', text: 'Samostalno ili kao dodatak tretmanu lica.', photo: 'LED terapija Dermalux Flex MD na licu', img: 'assets/img/led-terapija.jpg', pos: 'center center', href: '#led-terapija' },
-      { num: '05', cat: 'Lice', title: 'Miolift', text: 'Tretman u serijama od 4 ili 6 tretmana. Opis — sadržaj za potvrdu.', photo: 'Miolift tretman lica elektrodama', img: 'assets/img/miolift-92d35932.jpg', pos: 'center 35%', href: '#miolift' },
-      { num: '06', cat: 'Epilacija', title: 'Laserska epilacija', text: 'Diodni laser, po regijama tela i lica, pojedinačno ili do 6 tretmana.', photo: 'Laserska epilacija nogu diodnim laserom', img: 'assets/img/laserska-epilacija-48abcb1d.jpg', pos: 'center 40%', href: '#laserska-epilacija' },
-      { num: '07', cat: 'Epilacija', title: 'Elektroliza dlaka', text: 'Obračun po minutu, minimalno 5 minuta.', photo: 'Elektroliza dlaka iglom', img: 'assets/img/elektroliza.jpg', pos: 'center center', href: '#elektroliza' },
-      { num: '08', cat: 'Telo', title: 'Tretmani tela', text: 'Gipsane bermude, Ultracontour Touch, radiotalasni lifting i presoterapija.', photo: 'Tretman tela gipsanim bermudama', img: 'assets/img/tretmani-tela.jpg', pos: 'center center', href: '#tretmani-tela' },
-      { num: '09', cat: 'Telo', title: 'Masaže', text: 'Relax, terapeutska, sportska, anti stres, anticelulit i refleksologija.', photo: 'Masaža leđa u salonu', img: 'assets/img/tretmani-tela-i-masaze-39d364b7.jpg', pos: 'center 45%', href: '#masaze' },
-      { num: '10', cat: 'Paketi', title: 'Paketi tretmana', text: 'Serije tretmana za celulit, tonus kože i oblikovanje tela.', photo: 'Tretman oblikovanja tela', img: 'assets/img/paketi.jpg', pos: 'center 45%', href: '#paketi' }
+      { num: '01', cat: 'Lice', title: 'Tretmani lica', text: 'Od higijenskog tretmana i čišćenja do hidratacije, pilinga i radiotalasnog liftinga.', photo: 'Nanošenje maske tokom tretmana lica', img: 'assets/img/tretmani-lica-1-c24d3ff1.jpg', pos: 'center 40%', href: 'tretmani.html#tretmani-lica' },
+      { num: '02', cat: 'Personalizovano', title: 'Ženjin ritual', text: 'Personalizovani tretman. Sadržaj rituala — sadržaj za potvrdu.', photo: 'Ženja Trbojević tokom tretmana lica u salonu', img: 'assets/img/zenjin-ritual.png', pos: 'center 25%', href: 'tretmani.html#zenjin-ritual' },
+      { num: '03', cat: 'Lice i telo', title: 'Bloomea Neocare Advanced', text: 'Tretman lica i tretman tela. Protokol — sadržaj za potvrdu.', photo: 'Bloomea NeoCare Advanced uređaj', img: 'assets/img/bloomea-neocare-advanced-1c994708.jpg', pos: 'center center', href: 'tretmani.html#bloomea-neocare' },
+      { num: '04', cat: 'Lice i telo', title: 'LED terapija — Dermalux Flex MD', text: 'Samostalno ili kao dodatak tretmanu lica.', photo: 'LED terapija Dermalux Flex MD na licu', img: 'assets/img/led-terapija.jpg', pos: 'center center', href: 'tretmani.html#led-terapija' },
+      { num: '05', cat: 'Lice', title: 'Miolift', text: 'Tretman u serijama od 4 ili 6 tretmana. Opis — sadržaj za potvrdu.', photo: 'Miolift tretman lica elektrodama', img: 'assets/img/miolift-92d35932.jpg', pos: 'center 35%', href: 'tretmani.html#miolift' },
+      { num: '06', cat: 'Epilacija', title: 'Laserska epilacija', text: 'Diodni laser, po regijama tela i lica, pojedinačno ili do 6 tretmana.', photo: 'Laserska epilacija nogu diodnim laserom', img: 'assets/img/laserska-epilacija-48abcb1d.jpg', pos: 'center 40%', href: 'tretmani.html#laserska-epilacija' },
+      { num: '07', cat: 'Epilacija', title: 'Elektroliza dlaka', text: 'Obračun po minutu, minimalno 5 minuta.', photo: 'Elektroliza dlaka iglom', img: 'assets/img/elektroliza.jpg', pos: 'center center', href: 'tretmani.html#elektroliza' },
+      { num: '08', cat: 'Telo', title: 'Tretmani tela', text: 'Gipsane bermude, Ultracontour Touch, radiotalasni lifting i presoterapija.', photo: 'Tretman tela gipsanim bermudama', img: 'assets/img/tretmani-tela.jpg', pos: 'center center', href: 'tretmani.html#tretmani-tela' },
+      { num: '09', cat: 'Telo', title: 'Masaže', text: 'Relax, terapeutska, sportska, anti stres, anticelulit i refleksologija.', photo: 'Masaža leđa u salonu', img: 'assets/img/tretmani-tela-i-masaze-39d364b7.jpg', pos: 'center 45%', href: 'tretmani.html#masaze' },
+      { num: '10', cat: 'Paketi', title: 'Paketi tretmana', text: 'Serije tretmana za celulit, tonus kože i oblikovanje tela.', photo: 'Tretman oblikovanja tela', img: 'assets/img/paketi.jpg', pos: 'center 45%', href: 'tretmani.html#paketi' }
     ];
+
+    const post = this.state.post;
 
     return {
       gridLines: this.props.gridLines ?? true,
+      newsMsg: this.newsMsg,
+      newsSubmit: (e) => {
+        e.preventDefault();
+        const f = e.currentTarget;
+        if (this.newsMsg.current) {
+          const ime = ((f.elements.ime && f.elements.ime.value) || '').trim().split(' ')[0];
+          this.newsMsg.current.textContent = (ime ? ime + ', h' : 'H') + 'vala — prijava je deo dizajna i nije poslata.';
+        }
+        f.reset();
+      },
+      topOpacity: this.state.showTop ? 1 : 0,
+      topVis: this.state.showTop ? 'visible' : 'hidden',
+      scrollTop: () => {
+        const d = document.querySelector('[role="dialog"][aria-modal="true"]');
+        if (d && d.scrollHeight > d.clientHeight) { d.scrollTo({ top: 0, behavior: 'smooth' }); }
+        else { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+      },
+      posts: this.blogPosts.map((p, i) => Object.assign({}, p, { open: () => this.setState({ post: i }) })),
+      postOpen: post !== null,
+      postKicker: post !== null ? this.blogPosts[post].kicker : '',
+      postTitle: post !== null ? this.blogPosts[post].title : '',
+      postLead: post !== null ? this.blogPosts[post].lead : '',
+      postBody: (post !== null && this.blogPosts[post].body
+        ? this.blogPosts[post].body
+        : [{ paras: ['Tekst bloga — sadržaj za dopunu.'] }]
+      ).map((b) => ({ heading: b.heading || '', paras: (b.paras || []).map((t) => ({ t: t })) })),
+      related: [
+        { slot: 'Blog foto · 4:3', title: 'Naslov povezane objave 01' },
+        { slot: 'Blog foto · 4:3', title: 'Naslov povezane objave 02' },
+        { slot: 'Blog foto · 4:3', title: 'Naslov povezane objave 03' }
+      ],
+      closePost: () => this.setState({ post: null }),
+      blogMsg: this.blogMsg,
+      blogSubmit: (e) => {
+        e.preventDefault();
+        const f = e.currentTarget;
+        if (this.blogMsg.current) {
+          const ime = ((f.elements.ime && f.elements.ime.value) || '').trim().split(' ')[0];
+          this.blogMsg.current.textContent = (ime ? ime + ', h' : 'H') + 'vala — forma je deo dizajna, poruka nije poslata.';
+        }
+        f.reset();
+      },
       needs: raw.map((r) => ({
         num: r[0], title: r[1], text: r[2], tag: r[3],
         enter: (e) => this.showPreview(r[3], e.currentTarget, r[4]),
